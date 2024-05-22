@@ -1,7 +1,6 @@
 import { AdaptiveDpr, AsciiRenderer, OrbitControls, OrthographicCamera } from '@react-three/drei'
 import Experience from './Experience'
 import { Canvas } from '@react-three/fiber'
-import { colors } from '@/constants/colors'
 import { Suspense, useLayoutEffect, useState } from 'react'
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
         <Experience />
         <AsciiRenderer
           bgColor='transparent'
-          fgColor={showAnimation ? colors.gold[600] : 'transparent'} // weird glitch where the ascii shows the full page on load
+          fgColor={showAnimation ? '#000' : 'transparent'} // weird glitch where the ascii shows the full page on load
           characters='   .⋄,∴⍣⏦≁*+≀≁≂≃≄≆≇≈≉≌≍≎≏≐≑≒≓eacnvEl#@'
         />
         <AdaptiveDpr pixelated />

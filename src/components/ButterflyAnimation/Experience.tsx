@@ -56,7 +56,7 @@ const Experience: React.FC = () => {
           <Butterfly key={i} index={i} texture={texture} />
         ))}
       </group>
-      <color attach='background' args={['#0c0b0b']} />
+      <color attach='background' args={['#000']} />
     </>
   )
 }

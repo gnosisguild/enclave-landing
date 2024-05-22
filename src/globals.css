@@ -8,7 +8,7 @@
 
 @layer base {
   body {
-    @apply bg-green-950 font-serif text-green-100 antialiased;
+    @apply bg-white font-serif text-black antialiased;
   }
 
   .canvas {
@@ -30,17 +30,16 @@
   }
 
   input {
-    @apply bg-green-1000/50 h-14 w-full rounded-xl border-2 border-green-600 px-6 py-4 font-sans font-medium leading-none ring-2 ring-transparent backdrop-blur-md placeholder:text-green-300/50 focus-within:outline-none focus:border-gold-600 focus:ring-gold-600/40;
+    @apply h-10 w-full rounded border border-gray-600 bg-white/50 px-4 py-3 font-mono text-sm font-medium leading-none ring-2 ring-transparent backdrop-blur-md placeholder:text-gray-800/40 focus-within:outline-none focus:border-gold-600 focus:ring-gold-600/40;
   }
 }
 
 @layer components {
   .btn {
-    @apply flex h-14 cursor-pointer items-center justify-center gap-2 rounded-[11px] px-6 py-4 font-mono font-semibold leading-none transition-all duration-300 ease-in-out;
+    @apply flex h-10 cursor-pointer items-center justify-center gap-2 rounded px-4 py-3 font-mono text-sm font-semibold leading-none transition-all duration-300 ease-in-out;
   }
 
   .btn--primary {
-    @apply relative border-2 border-green-800 bg-gradient-to-b from-green-400 to-green-600 lowercase text-green-100 hover:from-green-300 hover:to-green-500 hover:text-white active:translate-y-0.5 active:from-green-600 active:to-green-700 active:text-green-500;
-    /* @apply before:absolute before:inset-[-2px] before:z-[-1] before:rounded-xl before:bg-gradient-to-b before:from-green-300 before:to-green-700 hover:before:from-green-300 hover:before:to-green-600 active:before:from-green-500 active:before:to-green-600; */
+    @apply relative bg-gray-950 lowercase text-gray-100 hover:bg-gray-700 hover:text-white active:translate-y-0.5 active:bg-gray-600 active:text-gray-100;
   }
 }
