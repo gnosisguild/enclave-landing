@@ -1,5 +1,5 @@
 import { memo, useEffect, useRef, useState } from 'react'
-import Butterfly from './Butterfly'
+import Butterfly from './Butterfly.tsx'
 import * as THREE from 'three'
 import butterflyTexture from '@/assets/textures/tex.png'
 import { TorusKnot, meshBounds } from '@react-three/drei'

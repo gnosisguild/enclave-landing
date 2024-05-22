@@ -25,14 +25,14 @@ interface ButterflyProps {
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      butterflyShader: ReactThreeFiber.Object3DNode<THREE.ShaderMaterial, typeof ButterflyShader>
+      butterflyShader: ReactThreeFiber.Object3DNode<THREE.ShaderMaterial, typeof ButterflyShader>;
     }
   }
 }
 
 const Butterfly = ({ index, texture }: ButterflyProps) => {
-  const ref = useRef<any>(null)
-  const dpr = useRef<number>(1)
+  const ref = useRef<any>()
+  const dpr = useRef(1)
   const [butterflySize, setButterflySize] = useState(280)
   const { viewport } = useThree()
 
@@ -41,7 +41,7 @@ const Butterfly = ({ index, texture }: ButterflyProps) => {
   }, [])
 
   useFrame(({ clock, viewport }) => {
-    if (dpr.current !== 1) return
+    if (dpr.current === 1) return
     const t = clock.elapsedTime
     const scale = Math.min(Math.max(butterflySize / 280, 1), 3)
     setButterflySize(viewport.width < 650 ? viewport.height * 0.8 : viewport.height * (dpr.current > 1 ? 0.6 : 1))
