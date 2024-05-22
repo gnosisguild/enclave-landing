@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  body {
+    @apply bg-green-950 font-serif text-green-100 antialiased;
+  }
+
+  .canvas {
+    position: absolute !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    pointer-events: none !important;
+    z-index: -1;
+  }
+
+  canvas {
+    margin: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  input {
+    @apply bg-green-1000/50 h-14 w-full rounded-xl border-2 border-green-600 px-6 py-4 font-sans font-medium leading-none ring-2 ring-transparent backdrop-blur-md placeholder:text-green-300/50 focus-within:outline-none focus:border-gold-600 focus:ring-gold-600/40;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex h-14 cursor-pointer items-center justify-center gap-2 rounded-[11px] px-6 py-4 font-sans font-semibold leading-none transition-all duration-300 ease-in-out;
+  }
+
+  .btn--primary {
+    @apply relative border-2 border-green-800 bg-gradient-to-b from-green-400 to-green-600 lowercase text-green-100 hover:from-green-300 hover:to-green-500 hover:text-white active:translate-y-0.5 active:from-green-600 active:to-green-700 active:text-green-500;
+    /* @apply before:absolute before:inset-[-2px] before:z-[-1] before:rounded-xl before:bg-gradient-to-b before:from-green-300 before:to-green-700 hover:before:from-green-300 hover:before:to-green-600 active:before:from-green-500 active:before:to-green-600; */
+  }
+}
