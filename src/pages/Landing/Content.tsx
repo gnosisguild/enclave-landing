@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import AnimatedText from './AnimatedText'
+import AnimatedText from '@/components/AnimatedText'
 import { menuItems } from '@/constants/menuItems'
 
 const Content = () => {

@@ -2,7 +2,7 @@ import { AdaptiveDpr, AsciiRenderer, OrbitControls, OrthographicCamera } from '@
 import Experience from './Experience'
 import { Canvas } from '@react-three/fiber'
 import { colors } from '@/constants/colors'
-import { Suspense, useLayoutEffect, useRef, useState } from 'react'
+import { Suspense, useLayoutEffect, useState } from 'react'
 
 function App() {
   const [showAnimation, setShowAnimation] = useState(false)

@@ -1,5 +1,5 @@
 import Content from './Content'
-import ButterflyAnimation from './ButterflyAnimation'
+import ButterflyAnimation from '@/components/ButterflyAnimation'
 
 const Landing = () => {
   return (

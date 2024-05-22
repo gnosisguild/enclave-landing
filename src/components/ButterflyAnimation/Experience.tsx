@@ -2,18 +2,18 @@ import { memo, useEffect, useRef, useState } from 'react'
 import Butterfly from './Butterfly'
 import * as THREE from 'three'
 import butterflyTexture from '@/assets/textures/tex.png'
-import { Bvh, TorusKnot, meshBounds } from '@react-three/drei'
+import { TorusKnot, meshBounds } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import useWindowSize from '@/hooks/useWindowSize'
 
-const Experience = () => {
-  const directionalLightRef = useRef()
-  const torusRef1 = useRef()
-  const torusRef2 = useRef()
-  const [showTorus, setShowTorus] = useState(false)
-  const [texture, setTexture] = useState(null)
+const Experience: React.FC = () => {
+  const directionalLightRef = useRef<THREE.DirectionalLight | null>(null)
+  const torusRef1 = useRef<THREE.Mesh | null>(null)
+  const torusRef2 = useRef<THREE.Mesh | null>(null)
+  const [showTorus] = useState(false)
+  const [texture, setTexture] = useState<THREE.Texture | null>(null)
 
-  const { isMobile, isDesktop } = useWindowSize()
+  const { isMobile } = useWindowSize()
 
   useEffect(() => {
     const loader = new THREE.TextureLoader()
