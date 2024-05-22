@@ -4,6 +4,8 @@ import useScrollToTop from '@/hooks/useScrollToTop'
 import Landing from './pages/Landing'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import WhitePaper from './pages/Whitepaper'
+import Hiring from './pages/Hiring'
 
 const App: React.FC = () => {
   useScrollToTop()
@@ -13,6 +15,8 @@ const App: React.FC = () => {
       <Navbar />
       <Routes>
         <Route path='/' element={<Landing />} />
+        <Route path='/whitepaper' element={<WhitePaper />} />
+        <Route path='/hiring' element={<Hiring />} />
       </Routes>
       <Footer />
     </Fragment>

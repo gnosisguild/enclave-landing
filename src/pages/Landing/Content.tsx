@@ -1,28 +1,14 @@
 import { Link } from 'react-router-dom'
 import AnimatedText from './AnimatedText'
+import { menuItems } from '@/constants/menuItems'
 
 const Content = () => {
-  const links = [
-    {
-      name: 'white paper',
-      url: '#',
-    },
-    {
-      name: 'seed memo',
-      url: '#',
-    },
-    {
-      name: 'hiring',
-      url: '#',
-    },
-  ]
-
   return (
     <div className='flex min-h-screen w-full items-center justify-center px-6'>
       <div className='relative mx-auto w-full max-w-screen-md'>
         <div className='space-y-16'>
           <div className='space-y-1'>
-            <div className='font-display text-7xl leading-none tracking-tight text-green-100 md:text-8xl'>enclave.</div>
+            <h1 className='font-display text-7xl leading-none tracking-tight text-green-100 md:text-8xl'>enclave.</h1>
             <div className='font-mono text-lg font-medium leading-none text-green-300 md:text-2xl md:tracking-wide'>
               <AnimatedText text='encrypted execution environments' />
             </div>
@@ -32,7 +18,7 @@ const Content = () => {
             <button className='btn btn--primary max-md:w-full'>Subscribe</button>
           </div>
           <ul className='space-y-4'>
-            {links.map(({ name, url }, i) => {
+            {menuItems.map(({ name, url }, i) => {
               return (
                 <li key={i}>
                   <Link

@@ -9,10 +9,7 @@ const useWindowSize = () => {
       const newWindowWidth = window?.innerWidth
       setWindowWidth(newWindowWidth)
 
-      // Find the current breakpoint
-      if (windowWidth <= 640) {
-        setIsMobile(true)
-      }
+      setIsMobile(windowWidth <= 768)
     }
 
     window.addEventListener('resize', handleResize)

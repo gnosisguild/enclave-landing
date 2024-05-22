@@ -1,21 +1,19 @@
-import { FarcasterLogo, XLogo } from '@/components/Icons'
-import { ReactElement } from 'react'
-
-interface MenuItemsProps {
+interface MenuItemProps {
   name: string
-  icon: ReactElement
   url: string
 }
 
-export const menuItems: MenuItemsProps[] = [
+export const menuItems: MenuItemProps[] = [
   {
-    name: 'twitter',
-    icon: <XLogo size={24} />,
+    name: 'white paper',
+    url: '/whitepaper',
+  },
+  {
+    name: 'seed memo',
     url: '#',
   },
   {
-    name: 'farcaster',
-    icon: <FarcasterLogo size={24} />,
-    url: '#',
+    name: 'hiring',
+    url: '/hiring',
   },
 ]
