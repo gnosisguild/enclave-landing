@@ -1,4 +1,3 @@
-import Logo from '../Logo'
 import { Link } from 'react-router-dom'
 import { socialLinks } from '@/constants/socialLinks'
 
