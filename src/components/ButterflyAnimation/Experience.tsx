@@ -3,8 +3,8 @@ import Butterfly from './Butterfly.tsx'
 import * as THREE from 'three'
 import butterflyTexture from '@/assets/textures/tex.png'
 import { TorusKnot, meshBounds } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber'
-import useWindowSize from '@/hooks/useWindowSize'
+// import { useFrame } from '@react-three/fiber'
+// import useWindowSize from '@/hooks/useWindowSize'
 
 const Experience: React.FC = () => {
   const directionalLightRef = useRef<THREE.DirectionalLight | null>(null)
@@ -13,7 +13,7 @@ const Experience: React.FC = () => {
   const [showTorus] = useState(false)
   const [texture, setTexture] = useState<THREE.Texture | null>(null)
 
-  const { isMobile } = useWindowSize()
+  // const { isMobile } = useWindowSize()
 
   useEffect(() => {
     const loader = new THREE.TextureLoader()
@@ -24,16 +24,16 @@ const Experience: React.FC = () => {
     })
   }, [])
 
-  useFrame(({ clock }) => {
-    if (isMobile) return
-    const t = clock.elapsedTime * 0.2
-    // if (isDesktop && !showTorus) {
-    //   setShowTorus(true)
-    // }
-    if (!torusRef1.current || !torusRef2.current) return
-    torusRef1.current.rotation.set(0, t, t)
-    torusRef2.current.rotation.set(t, -t, t)
-  })
+  // useFrame(({ clock }) => {
+  //   if (isMobile) return
+  //   const t = clock.elapsedTime * 0.2
+  //   // if (isDesktop && !showTorus) {
+  //   //   setShowTorus(true)
+  //   // }
+  //   if (!torusRef1.current || !torusRef2.current) return
+  //   torusRef1.current.rotation.set(0, t, t)
+  //   torusRef2.current.rotation.set(t, -t, t)
+  // })
 
   if (!texture) return null
 
