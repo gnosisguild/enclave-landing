@@ -8,8 +8,8 @@ const Content = () => {
       <div className='relative mx-auto w-full max-w-screen-md'>
         <div className='space-y-16'>
           <div className='space-y-1'>
-            <h1 className='font-display text-7xl leading-none tracking-tight text-green-100 md:text-8xl'>enclave.</h1>
-            <div className='font-mono text-lg font-medium leading-none text-green-300 md:text-2xl md:tracking-wide'>
+            <h1 className='font-display text-4xl leading-none tracking-tight'>enclave.</h1>
+            <div className='font-mono font-medium leading-none text-gray-600 md:tracking-wide'>
               <AnimatedText text='encrypted execution environments' />
             </div>
           </div>
@@ -23,7 +23,7 @@ const Content = () => {
                 <li key={i}>
                   <Link
                     to={url}
-                    className='inline-flex cursor-pointer items-center space-x-3 font-mono text-xl underline decoration-green-700 decoration-2 underline-offset-2 duration-300 ease-in-out hover:text-white hover:decoration-gold-500 hover:underline-offset-4'
+                    className='inline-flex cursor-pointer items-center space-x-3 font-mono text-sm underline decoration-gray-700 decoration-2 underline-offset-2 duration-300 ease-in-out hover:text-gray-500 hover:decoration-gold-500 hover:underline-offset-4'
                   >
                     {name}
                   </Link>

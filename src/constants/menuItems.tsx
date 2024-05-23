@@ -13,7 +13,7 @@ export const menuItems: MenuItemProps[] = [
     url: '#',
   },
   {
-    name: 'hiring',
+    name: 'join the team',
     url: '/hiring',
   },
 ]
