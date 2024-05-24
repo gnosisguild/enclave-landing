@@ -10,36 +10,24 @@
   body {
     @apply bg-white font-serif text-black antialiased;
   }
-
-  .canvas {
-    position: absolute !important;
-    width: 100vw !important;
-    height: 100vh !important;
-    pointer-events: none !important;
-    z-index: -1;
-  }
-
-  canvas {
-    margin: 0;
-    width: 100vw !important;
-    height: 100vh !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-
-  input {
-    @apply h-10 w-full rounded border border-gray-600 bg-white/50 px-4 py-3 font-mono text-sm font-medium leading-none ring-2 ring-transparent backdrop-blur-md placeholder:text-gray-800/40 focus-within:outline-none focus:border-gold-600 focus:ring-gold-600/40;
-  }
 }
 
 @layer components {
+  /* button */
   .btn {
     @apply flex h-10 cursor-pointer items-center justify-center gap-2 rounded px-4 py-3 font-mono text-sm font-semibold leading-none transition-all duration-300 ease-in-out;
   }
 
+  .btn--noCSS {
+    @apply appearance-auto rounded border border-gray-800 bg-gray-100 text-black hover:bg-gray-200;
+  }
+
   .btn--primary {
     @apply relative bg-gray-950 lowercase text-gray-100 hover:bg-gray-700 hover:text-white active:translate-y-0.5 active:bg-gray-600 active:text-gray-100;
+  }
+
+  /* input */
+  .input {
+    @apply h-10 w-full rounded border border-gray-300 bg-white/50 px-4 py-3 font-mono text-sm font-medium leading-none ring-4 ring-transparent backdrop-blur-md placeholder:text-gray-800/40 focus-within:outline-none focus:border-gray-800 focus:ring-green-500/10;
   }
 }

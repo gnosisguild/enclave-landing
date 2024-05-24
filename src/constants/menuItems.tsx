@@ -14,6 +14,6 @@ export const menuItems: MenuItemProps[] = [
   },
   {
     name: 'join the team',
-    url: '/hiring',
+    url: 'https://gnosisguild.notion.site/Gnosis-Guild-Open-Roles-7a55681224af4b7fa158fedb86fef471',
   },
 ]

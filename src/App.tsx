@@ -5,11 +5,13 @@ import Landing from './pages/Landing'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WhitePaper from './pages/Whitepaper'
-import Hiring from './pages/Hiring'
+import { asciiArt } from './constants/asciiart'
 
 const App: React.FC = () => {
   const { pathname } = useLocation()
   useScrollToTop()
+
+  console.log(asciiArt)
 
   return (
     <Fragment>
@@ -17,7 +19,6 @@ const App: React.FC = () => {
       <Routes>
         <Route path='/' element={<Landing />} />
         <Route path='/whitepaper' element={<WhitePaper />} />
-        <Route path='/hiring' element={<Hiring />} />
       </Routes>
       <Footer />
     </Fragment>
