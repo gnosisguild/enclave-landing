@@ -43,7 +43,7 @@ const AnimatedText = ({ text, animationDuration = 1000, finalizationDuration = 4
   return (
     <div className='whitespace-pre font-mono'>
       {displayText.map((char, index) => (
-        <span key={index} className='min-w-[14px]'>
+        <span key={index} className='w-4'>
           {char === '' ? '\u00A0' : char}
         </span>
       ))}

@@ -13,19 +13,21 @@ function App() {
   })
 
   return (
-    <Canvas className='canvas' flat>
-      <Suspense fallback={null}>
-        <OrthographicCamera makeDefault position={[250, 500, 1000]} zoom={2.5} near={1} far={10000} />
-        <OrbitControls enabled={false} />
-        <Experience />
-        <AsciiRenderer
-          bgColor='transparent'
-          fgColor={showAnimation ? '#000' : 'transparent'} // weird glitch where the ascii shows the full page on load
-          characters='   .⋄,∴⍣⏦≁*+≀≁≂≃≄≆≇≈≉≌≍≎≏≐≑≒≓eacnvEl#@'
-        />
-        <AdaptiveDpr pixelated />
-      </Suspense>
-    </Canvas>
+    <div className='absolute h-full w-full overflow-hidden'>
+      <Canvas flat>
+        <Suspense fallback={null}>
+          <OrthographicCamera makeDefault position={[250, 500, 1000]} zoom={2.5} near={1} far={10000} />
+          <OrbitControls enabled={false} />
+          <Experience />
+          <AsciiRenderer
+            bgColor='transparent'
+            fgColor={showAnimation ? '#000' : 'transparent'} // weird glitch where the ascii shows the full page on load
+            characters='   .⋄,∴⍣⏦≁*+≀≁≂≃≄≆≇≈≉≌≍≎≏≐≑≒≓eacnvEl#@'
+          />
+          <AdaptiveDpr pixelated />
+        </Suspense>
+      </Canvas>
+    </div>
   )
 }
 
