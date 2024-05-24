@@ -5,7 +5,6 @@ import Landing from './pages/Landing'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import WhitePaper from './pages/Whitepaper'
-import Hiring from './pages/Hiring'
 import { asciiArt } from './constants/asciiart'
 
 const App: React.FC = () => {
