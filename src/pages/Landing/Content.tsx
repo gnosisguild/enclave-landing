@@ -4,7 +4,7 @@ import { menuItems } from '@/constants/menuItems'
 
 const Content = () => {
   return (
-    <div className='flex min-h-screen w-full items-center justify-center px-6'>
+    <div className='flex w-full flex-grow flex-col items-center justify-center px-6'>
       <div className='relative mx-auto w-full max-w-screen-md'>
         <div className='space-y-16'>
           <div className='space-y-1'>

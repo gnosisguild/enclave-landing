@@ -15,10 +15,12 @@ const App: React.FC = () => {
   return (
     <Fragment>
       {pathname !== '/' && <Navbar />}
-      <Routes>
-        <Route path='/' element={<Landing />} />
-      </Routes>
-      <Footer />
+      <div className='flex min-h-screen flex-grow flex-col'>
+        <Routes>
+          <Route path='/' element={<Landing />} />
+        </Routes>
+        <Footer />
+      </div>
     </Fragment>
   )
 }
