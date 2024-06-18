@@ -6,10 +6,10 @@ const config = {
     extend: {
       colors: colors,
       fontFamily: {
-        sans: ['Plus Jakarta Sans', 'sans'],
-        serif: ['DM Serif Text', 'serif'],
-        display: ['DM Serif Display', 'serif'],
-        mono: ['IBM Plex Mono', 'monospace'],
+        sans: ['sans'],
+        serif: ['serif'],
+        display: ['sans'],
+        mono: ['monospace'],
       },
     },
   },
