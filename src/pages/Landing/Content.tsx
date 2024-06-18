@@ -8,7 +8,7 @@ const Content = () => {
       <div className='relative mx-auto w-full max-w-screen-md'>
         <div className='space-y-16'>
           <div className='space-y-1'>
-            <h1 className='font-display text-4xl leading-none tracking-tight'>enclave.</h1>
+            <h1 className='font-display text-4xl leading-none tracking-tight'>enclave</h1>
             <div className='font-mono font-medium leading-none text-gray-600 md:tracking-wide'>
               <AnimatedText text='encrypted execution environments (e3)' />
             </div>

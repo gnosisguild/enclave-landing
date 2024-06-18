@@ -4,7 +4,6 @@ import useScrollToTop from '@/hooks/useScrollToTop'
 import Landing from './pages/Landing'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import WhitePaper from './pages/Whitepaper'
 import { asciiArt } from './constants/asciiart'
 
 const App: React.FC = () => {
@@ -18,7 +17,6 @@ const App: React.FC = () => {
       {pathname !== '/' && <Navbar />}
       <Routes>
         <Route path='/' element={<Landing />} />
-        <Route path='/whitepaper' element={<WhitePaper />} />
       </Routes>
       <Footer />
     </Fragment>

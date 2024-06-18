@@ -28,6 +28,6 @@ export const asciiArt = `
             enclave✺enclave✺enclav(          enclave✺enclave✺enclave         
             enclave✺enclave✺encl(              enclave✺enclave✺encla         
              enclave✺enclave✺@                    enclave✺enclave✺/          We're hiring
-                enclave✺en                            enclave✺en             enclave.gg/hiring
+                enclave✺en                            enclave✺en             https://hiring.enclave.gg
 
   `

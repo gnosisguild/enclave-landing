@@ -6,11 +6,7 @@ interface MenuItemProps {
 export const menuItems: MenuItemProps[] = [
   {
     name: 'white paper',
-    url: '/whitepaper',
-  },
-  {
-    name: 'seed memo',
-    url: '#',
+    url: 'https://docs.google.com/document/d/1N_G5BH7klvFV3vdwe4ZRuoVoFNYsVq7ZU_1BOBHxN4A/edit?pli=1#heading=h.veau3pttsm0d',
   },
   {
     name: 'join the team',
