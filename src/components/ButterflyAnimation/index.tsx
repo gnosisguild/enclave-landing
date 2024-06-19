@@ -13,7 +13,7 @@ function App() {
   })
 
   return (
-    <div className='absolute h-full w-full overflow-hidden'>
+    <div className='absolute z-[-1] h-full w-full overflow-hidden'>
       <Canvas flat>
         <Suspense fallback={null}>
           <OrthographicCamera makeDefault position={[250, 500, 1000]} zoom={2.5} near={1} far={10000} />
