@@ -1,8 +1,27 @@
 import { Link } from 'react-router-dom'
 import AnimatedText from '@/components/AnimatedText'
 import { menuItems } from '@/constants/menuItems'
+import { useEffect, useRef } from 'react'
 
 const Content = () => {
+  const signupHolder = useRef<HTMLDivElement>(null)
+  useEffect(() => {
+    const script = document.createElement('script')
+
+    script.setAttribute('data-button-color', '#000000')
+    script.setAttribute('data-button-text-color', '#FFFFFF')
+    script.setAttribute('data-site', 'https://blog.enclave.gg/')
+
+    script.src = 'https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js'
+    script.async = true
+
+    signupHolder.current?.appendChild(script)
+
+    return () => {
+      signupHolder.current?.removeChild(script)
+    }
+  }, [])
+
   return (
     <div className='flex w-full flex-grow flex-col items-center justify-center px-6'>
       <div className='relative mx-auto w-full max-w-screen-md'>
@@ -14,8 +33,9 @@ const Content = () => {
             </div>
           </div>
           <div className='flex max-w-lg items-center gap-4 max-md:flex-wrap'>
-            <input className='input' type='text' placeholder='enter your email' />
-            <button className='btn btn--noCSS font-mono max-md:w-full'>Subscribe</button>
+            {/* <input className='input' type='text' placeholder='enter your email' />
+            <button className='btn btn--noCSS font-mono max-md:w-full'>Subscribe</button> */}
+            <div ref={signupHolder} className='w-full' />
           </div>
           <ul className='space-y-4'>
             {menuItems.map(({ name, url }, i) => {
