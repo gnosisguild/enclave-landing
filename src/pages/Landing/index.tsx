@@ -3,7 +3,7 @@ import ButterflyAnimation from '@/components/ButterflyAnimation'
 
 const Landing = () => {
   return (
-    <main className='-z-1 flex h-full w-full flex-grow flex-col'>
+    <main className='flex h-full w-full flex-grow flex-col'>
       <ButterflyAnimation />
       <Content />
     </main>
