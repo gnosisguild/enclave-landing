@@ -2,32 +2,19 @@ const output = `�ɍ���ߞ�C�(jz���m��Q0'�R�I�P�n�
 `
 
 const createAsciiArt = () => {
-  const splitOutput = output.split('')
-  //   return `
-  //                 eenclaveencla          enclaveencl
-  //                enc         enclave    enc   enclavee
-  //              enc            enclave  e         encla
-  //             enclaveenclaveenclavee            ence
-  //             ence                            encla
-  //             ence                         %enclaveenc
-  //             encla                             enclavee
-  //             enclave               e             enclav
-  //              enclave           en               ence
-  //                enclaveenclaveenc   encla        enc     We're hiring:
-  //                  enclaveenclav      enclaveencee        https://hiring.enclave.gg
-  // `
+  const o = output.split('')
   return `
-               ${splitOutput[1]}${splitOutput[2]}${splitOutput[3]}${splitOutput[4]}${splitOutput[5]}${splitOutput[6]}${splitOutput[7]}${splitOutput[8]}${splitOutput[9]}${splitOutput[10]}${splitOutput[11]}${splitOutput[12]}${splitOutput[13]}         ${splitOutput[14]}${splitOutput[15]}${splitOutput[16]}${splitOutput[17]}${splitOutput[18]}${splitOutput[19]}${splitOutput[20]}${splitOutput[21]}${splitOutput[22]}${splitOutput[23]}${splitOutput[24]}            
-             ${splitOutput[25]}${splitOutput[26]}${splitOutput[27]}         ${splitOutput[28]}${splitOutput[29]}${splitOutput[30]}${splitOutput[31]}${splitOutput[32]}${splitOutput[33]}    ${splitOutput[34]}${splitOutput[35]}${splitOutput[36]}   ${splitOutput[37]}${splitOutput[38]}${splitOutput[39]}${splitOutput[40]}${splitOutput[41]}${splitOutput[42]}${splitOutput[43]}${splitOutput[44]}           
-           ${splitOutput[45]}${splitOutput[46]}${splitOutput[47]}            ${splitOutput[48]}${splitOutput[49]}${splitOutput[50]}${splitOutput[51]}${splitOutput[52]}${splitOutput[53]}  ${splitOutput[54]}         ${splitOutput[55]}${splitOutput[56]}${splitOutput[57]}${splitOutput[58]}${splitOutput[59]}           
-          ${splitOutput[60]}${splitOutput[61]}${splitOutput[62]}${splitOutput[63]}${splitOutput[64]}${splitOutput[65]}${splitOutput[66]}${splitOutput[67]}${splitOutput[68]}${splitOutput[69]}${splitOutput[70]}${splitOutput[71]}${splitOutput[72]}${splitOutput[73]}${splitOutput[74]}${splitOutput[75]}${splitOutput[76]}${splitOutput[77]}${splitOutput[78]}${splitOutput[79]}${splitOutput[80]}${splitOutput[81]}            ${splitOutput[82]}${splitOutput[83]}${splitOutput[84]}${splitOutput[85]}            
-          ${splitOutput[86]}${splitOutput[87]}${splitOutput[88]}${splitOutput[89]}                            ${splitOutput[90]}${splitOutput[91]}${splitOutput[92]}${splitOutput[93]}${splitOutput[94]}             
-          ${splitOutput[95]}${splitOutput[96]}${splitOutput[97]}${splitOutput[98]}                         ${splitOutput[99]}${splitOutput[100]}${splitOutput[101]}${splitOutput[102]}${splitOutput[103]}${splitOutput[104]}${splitOutput[105]}${splitOutput[106]}${splitOutput[107]}${splitOutput[108]}${splitOutput[109]}          
-          ${splitOutput[110]}${splitOutput[111]}${splitOutput[112]}${splitOutput[113]}${splitOutput[114]}                             ${splitOutput[115]}${splitOutput[116]}${splitOutput[117]}${splitOutput[118]}${splitOutput[119]}${splitOutput[120]}${splitOutput[121]}         
-          ${splitOutput[122]}${splitOutput[123]}${splitOutput[124]}${splitOutput[125]}${splitOutput[126]}${splitOutput[127]}               ${splitOutput[128]}             ${splitOutput[129]}${splitOutput[130]}${splitOutput[131]}${splitOutput[132]}${splitOutput[133]}${splitOutput[134]}         
-           ${splitOutput[135]}${splitOutput[136]}${splitOutput[137]}${splitOutput[138]}${splitOutput[139]}${splitOutput[140]}${splitOutput[141]}           ${splitOutput[142]}${splitOutput[143]}               ${splitOutput[144]}${splitOutput[145]}${splitOutput[146]}${splitOutput[147]}          
-             ${splitOutput[148]}${splitOutput[149]}${splitOutput[150]}${splitOutput[151]}${splitOutput[152]}${splitOutput[153]}${splitOutput[154]}${splitOutput[155]}${splitOutput[156]}${splitOutput[157]}${splitOutput[158]}${splitOutput[159]}${splitOutput[160]}${splitOutput[161]}${splitOutput[162]}${splitOutput[163]}${splitOutput[164]}   ${splitOutput[165]}${splitOutput[166]}${splitOutput[167]}${splitOutput[168]}${splitOutput[169]}        ${splitOutput[170]}${splitOutput[171]}${splitOutput[172]}     We're hiring:
-               ${splitOutput[173]}${splitOutput[174]}${splitOutput[175]}${splitOutput[176]}${splitOutput[177]}${splitOutput[178]}${splitOutput[179]}${splitOutput[180]}${splitOutput[181]}${splitOutput[182]}${splitOutput[183]}${splitOutput[184]}       ${splitOutput[185]}${splitOutput[186]}${splitOutput[187]}${splitOutput[188]}${splitOutput[189]}${splitOutput[190]}${splitOutput[191]}${splitOutput[192]}${splitOutput[193]}${splitOutput[194]}${splitOutput[195]}${splitOutput[196]}        https://hiring.enclave.gg
+  ${o[1]}${o[2]}${o[3]}${o[4]}${o[5]}${o[6]}${o[7]}${o[8]}${o[9]}${o[10]}${o[11]}${o[12]}${o[13]}${o[14]}${o[15]}${o[16]}${o[17]}${o[18]}${o[19]}${o[20]}${o[21]}       ${o[22]}${o[23]}${o[24]}${o[25]}${o[26]}${o[27]}${o[28]}${o[29]}${o[30]}${o[31]}            
+    ${o[32]}${o[33]}${o[34]}${o[35]}${o[36]}${o[37]}${o[38]}         ${o[39]}${o[40]}${o[41]}     ${o[42]}${o[43]}${o[44]}   ${o[45]}${o[46]}${o[47]}${o[48]}${o[49]}${o[50]}${o[51]}${o[52]}          
+    ${o[53]}${o[54]}${o[55]}${o[56]}${o[57]}${o[58]}${o[59]}           ${o[60]}    ${o[61]}        ${o[62]}${o[63]}${o[64]}${o[65]}${o[66]}${o[67]}          
+    ${o[68]}${o[69]}${o[70]}${o[71]}${o[72]}${o[73]}${o[74]}     ${o[75]}                   ${o[76]}${o[77]}${o[78]}${o[79]}${o[80]}           
+    ${o[81]}${o[82]}${o[83]}${o[84]}${o[85]}${o[86]}${o[87]}    ${o[88]}${o[89]}                  ${o[90]}${o[91]}${o[92]}${o[93]}${o[94]}            
+    ${o[95]}${o[96]}${o[97]}${o[98]}${o[99]}${o[100]}${o[101]}${o[102]}${o[103]}${o[104]}${o[105]}${o[106]}${o[107]}              .${o[108]}${o[109]}${o[110]}${o[111]}${o[112]}${o[113]}${o[114]}${o[115]}${o[116]}${o[117]}          
+    ${o[118]}${o[119]}${o[120]}${o[121]}${o[122]}${o[123]}${o[124]}    ${o[125]}${o[126]}                   ${o[127]}${o[128]}${o[129]}${o[130]}${o[131]}${o[132]}${o[133]}         
+    ${o[134]}${o[135]}${o[136]}${o[137]}${o[138]}${o[139]}${o[140]}     ${o[141]}                     ${o[142]}${o[143]}${o[144]}${o[145]}${o[146]}         
+    ${o[147]}${o[148]}${o[149]}${o[150]}${o[151]}${o[152]}${o[153]}            .${o[154]}              ${o[155]}${o[156]}${o[157]}${o[158]}         
+    ${o[159]}${o[160]}${o[161]}${o[162]}${o[163]}${o[164]}${o[165]}           ${o[166]}${o[167]}${o[168]} ${o[169]}${o[170]}${o[171]}${o[172]}${o[173]}       ${o[174]}${o[175]}${o[176]}      We're hiring:
+   ${o[177]}${o[178]}${o[179]}${o[180]}${o[181]}${o[182]}${o[183]}${o[184]}${o[185]}${o[186]}${o[187]}${o[188]}${o[189]}${o[190]}${o[191]}${o[192]}${o[193]}${o[194]}${o[195]}${o[196]}${o[197]}  ${o[198]}${o[199]}${o[200]}${o[201]}${o[202]}${o[203]}${o[204]}${o[205]}${o[206]}${o[207]}${o[208]}${o[209]}${o[210]}        https://hiring.enclave.gg
 `
 }
 
