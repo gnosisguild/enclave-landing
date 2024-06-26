@@ -29,7 +29,7 @@ const Content = () => {
           <div className='space-y-1'>
             <h1 className='font-display text-4xl leading-none tracking-tight'>enclave</h1>
             <div className='font-mono font-medium leading-none text-gray-600 md:tracking-wide'>
-              <AnimatedText text='encrypted execution environments (e3)' />
+              <AnimatedText text='encrypted execution environments (E3)' />
             </div>
           </div>
           <div className='flex max-w-lg items-center gap-4 max-md:flex-wrap'>

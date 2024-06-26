@@ -1,33 +1,14 @@
-export const asciiArt = `
-           enclave                                           enclave         
-      ,enclave✺enclave✺                                 .enclave✺enclave✺    
-    ,enclave✺enclave✺encl                              .enclave✺enclave✺enc  
-    enclave✺enclave✺enclave                          enclave✺enclave✺enclav, 
-   enclave✺enclave✺enclave✺en.                    enclave✺enclave✺enclave✺enc
-  ,enclave✺enclave✺enclave✺encl#                enclave✺enclave✺enclave✺encla
-  &enclave✺enclave✺enclave✺enclav.            enclave✺enclave✺enclave✺enclave
-   enclave✺enclave#         enclave          enclave         enclave✺enclave✺
-   #enclave✺encla              encla       (encl.              enclave✺encla 
-   \enclave✺encl               encla       encl                 enclave✺enc/ 
-    /enclave✺enc                 ,enc.    encl                  enclave✺enc  
-      enclave✺en                   enc   &en,                  &enclave✺en   
-        enclave✺@                    en  en                   ,enclave✺@     
-          (enclave✺                   encl                   enclave✺        
-             /enclave                 #en                  enclave           
-                 &enclav               en              /enclav,              
-                      (enclav          @*         *enclav.                   
-                               /&enclave✺enclav%,                            
-                          ,encl&       &        encla                        
-                      encla            en           ,encla                   
-                  #encla,             &en              enclav                
-                enclave              %@ (@               enclave             
-               enclave              %@   ✺@                enclave           
-              enclave✺              en,  enc              enclave✺           
-             enclave✺@            enc,    encl           /enclave✺@          
-            enclave✺encl      .encla       .encla       enclave✺encl         
-            enclave✺enclave✺enclav(          enclave✺enclave✺enclave         
-            enclave✺enclave✺encl(              enclave✺enclave✺encla         
-             enclave✺enclave✺@                    enclave✺enclave✺/          We're hiring
-                enclave✺en                            enclave✺en             https://hiring.enclave.gg
-
-  `
+const art = `
+  ɍ\ufffd\ufffd\ufffdߞ\ufffdC\ufffd(jz\ufffd\ufffd\ufffdm\ufffd\ufffdQ0'\ufffd       R\ufffdI\ufffdP\ufffdn\ufffd\ufffdr            
+    \ufffd\ufffd\ufffd/P\ufffd\ufffd         $\ufffdP     \ufffd\ufffd\ufffd   \ufffdɍ\ufffd\ufffd\ufffdߞ\ufffdC          
+    \ufffd(jz\ufffd\ufffd\ufffd           m    \ufffd        \ufffdQ0'\ufffdR          
+    \ufffdI\ufffdP\ufffdn\ufffd     \ufffd                   r\ufffd\ufffd\ufffd/           
+    P\ufffd\ufffd$\ufffdP\ufffd    \ufffd\ufffd                  \ufffdɍ\ufffd\ufffd\ufffd            
+    ߞ\ufffdC\ufffd(jz\ufffd\ufffd\ufffdm\ufffd\ufffd              .Q0'\ufffdR\ufffdI\ufffdP\ufffd          
+    n\ufffd\ufffdr\ufffd\ufffd\ufffd    /P                   \ufffd\ufffd$\ufffdP\ufffd\ufffd         
+    \ufffd\ufffdɍ\ufffd\ufffd\ufffdߞ     \ufffd                     C\ufffd(jz         
+    \ufffd\ufffd\ufffdm\ufffd\ufffdQ            .0              '\ufffdR\ufffd         
+    I\ufffdP\ufffdn\ufffd\ufffd           r\ufffd\ufffd \ufffd/P\ufffd\ufffd       $\ufffdP      We're hiring:
+   \ufffd\ufffd\ufffd\ufffdɍ\ufffd\ufffd\ufffdߞ\ufffdC\ufffd(jz\ufffd\ufffd\ufffdm\ufffd\ufffd  Q0'\ufffdR\ufffdI\ufffdP\ufffdn\ufffd\ufffd        https://hiring.enclave.gg
+`
+export const asciiArt = art
