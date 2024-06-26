@@ -58,6 +58,7 @@ If you're up for a challenge, decrypt the RWLE ciphertext displayed on our landi
     if (encryptInstance && !showMsg) {
       const createAsciiArt = () => {
         if (encryptedMsg) {
+          setShowMsg(true)
           const o = new TextDecoder().decode(encryptedMsg).split('')
           return `
           ${o[1]}${o[2]}${o[3]}${o[4]}${o[5]}${o[6]}${o[7]}${o[8]}${o[9]}${o[10]}${o[11]}${o[12]}${o[13]}${o[14]}${o[15]}${o[16]}${o[17]}${o[18]}${o[19]}${o[20]}${o[21]}       ${o[22]}${o[23]}${o[24]}${o[25]}${o[26]}${o[27]}${o[28]}${o[29]}${o[30]}${o[31]}
@@ -78,7 +79,7 @@ If you're up for a challenge, decrypt the RWLE ciphertext displayed on our landi
       console.log(createAsciiArt())
       console.log(msg)
     }
-  }, [encryptedMsg])
+  }, [encryptedMsg, showMsg])
 
   return (
     <Fragment>
