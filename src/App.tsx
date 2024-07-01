@@ -1,11 +1,11 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment, Suspense, useEffect, useState } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import useScrollToTop from '@/hooks/useScrollToTop'
 import Landing from './pages/Landing'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { createAsciiArt } from './constants/asciiart'
-import { loadBinaryFile } from './utils/methods'
+import { binaryToHex, loadBinaryFile } from './utils/methods'
 import { HIRING_MSG } from './utils/contants'
 
 const App: React.FC = () => {
@@ -27,7 +27,7 @@ const App: React.FC = () => {
   useEffect(() => {
     if (encryptedMessage && !showMsg) {
       setShowMsg(true)
-      const asciiArt = createAsciiArt(encryptedMessage)
+      const asciiArt = createAsciiArt(binaryToHex(encryptedMessage))
       console.log(asciiArt)
       console.log(HIRING_MSG)
     }
@@ -35,13 +35,15 @@ const App: React.FC = () => {
 
   return (
     <Fragment>
-      {pathname !== '/' && <Navbar />}
-      <div className='flex min-h-screen flex-grow flex-col'>
-        <Routes>
-          <Route path='/' element={<Landing />} />
-        </Routes>
-        <Footer />
-      </div>
+      <Suspense fallback={null}>
+        {pathname !== '/' && <Navbar />}
+        <div className='flex min-h-screen flex-grow flex-col'>
+          <Routes>
+            <Route path='/' element={<Landing />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Suspense>
     </Fragment>
   )
 }

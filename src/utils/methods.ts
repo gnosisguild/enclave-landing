@@ -40,3 +40,9 @@ export const loadBinaryFile = async (filename: RequestInfo | URL) => {
   }
   return chunksAll
 }
+
+export const binaryToHex = (uint8Array: Uint8Array): string => {
+  return Array.from(uint8Array)
+    .map((byte) => byte.toString(16).padStart(2, '0'))
+    .join('')
+}

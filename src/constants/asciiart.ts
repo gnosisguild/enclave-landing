@@ -13,9 +13,8 @@ const art = `
 `
 export const asciiArt = art
 
-export const createAsciiArt = (encryptedMessage: Uint8Array) => {
-  console.log('encryptedMessage', encryptedMessage)
-  const o = new TextDecoder().decode(encryptedMessage).split('')
+export const createAsciiArt = (encryptedMessage: string) => {
+  const o = encryptedMessage.split('')
   return `
     ${o[1]}${o[2]}${o[3]}${o[4]}${o[5]}${o[6]}${o[7]}${o[8]}${o[9]}${o[10]}${o[11]}${o[12]}${o[13]}${o[14]}${o[15]}${o[16]}${o[17]}${o[18]}${o[19]}${o[20]}${o[21]}       ${o[22]}${o[23]}${o[24]}${o[25]}${o[26]}${o[27]}${o[28]}${o[29]}${o[30]}${o[31]}
       ${o[32]}${o[33]}${o[34]}${o[35]}${o[36]}${o[37]}${o[38]}         ${o[39]}${o[40]}${o[41]}     ${o[42]}${o[43]}${o[44]}   ${o[45]}${o[46]}${o[47]}${o[48]}${o[49]}${o[50]}${o[51]}${o[52]}
