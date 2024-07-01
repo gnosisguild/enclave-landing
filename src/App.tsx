@@ -35,7 +35,7 @@ const App: React.FC = () => {
 
   return (
     <Fragment>
-      <Suspense fallback={null}>
+      <Suspense fallback={<div className='h-screen w-screen bg-white' />}>
         {pathname !== '/' && <Navbar />}
         <div className='flex min-h-screen flex-grow flex-col'>
           <Routes>
