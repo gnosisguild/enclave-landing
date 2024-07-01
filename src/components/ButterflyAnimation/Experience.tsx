@@ -3,41 +3,26 @@ import Butterfly from './Butterfly.tsx'
 import * as THREE from 'three'
 import butterflyTexture from '@/assets/textures/tex.png'
 import { TorusKnot, meshBounds } from '@react-three/drei'
-// import { useFrame } from '@react-three/fiber'
-// import useWindowSize from '@/hooks/useWindowSize'
 
-const Experience: React.FC = () => {
+const Experience: React.FC<{ showAnimation: boolean }> = ({ showAnimation }) => {
   const directionalLightRef = useRef<THREE.DirectionalLight | null>(null)
   const torusRef1 = useRef<THREE.Mesh | null>(null)
   const torusRef2 = useRef<THREE.Mesh | null>(null)
   const [showTorus] = useState(false)
   const [texture, setTexture] = useState<THREE.Texture | null>(null)
 
-  // const { isMobile } = useWindowSize()
-
   useEffect(() => {
-    const loader = new THREE.TextureLoader()
-    loader.load(butterflyTexture, (texture) => {
-      texture.magFilter = THREE.NearestFilter
-      texture.minFilter = THREE.NearestFilter
-      setTexture(texture)
-    })
-  }, [])
+    if (!texture) {
+      const loader = new THREE.TextureLoader()
+      loader.load(butterflyTexture, (texture) => {
+        texture.magFilter = THREE.LinearFilter
+        texture.minFilter = THREE.LinearFilter
+        setTexture(texture)
+      })
+    }
+  }, [texture])
 
-  // useFrame(({ clock }) => {
-  //   if (isMobile) return
-  //   const t = clock.elapsedTime * 0.2
-  //   // if (isDesktop && !showTorus) {
-  //   //   setShowTorus(true)
-  //   // }
-  //   if (!torusRef1.current || !torusRef2.current) return
-  //   torusRef1.current.rotation.set(0, t, t)
-  //   torusRef2.current.rotation.set(t, -t, t)
-  // })
-
-  if (!texture) return null
-
-  return (
+  return texture ? (
     <>
       <ambientLight intensity={0.08 * 0.15} />
       <directionalLight ref={directionalLightRef} intensity={0.1} position={[-250, 0, 500]} />
@@ -56,9 +41,9 @@ const Experience: React.FC = () => {
           <Butterfly key={i} index={i} texture={texture} />
         ))}
       </group>
-      <color attach='background' args={['#000']} />
+      <color attach='background' args={[!showAnimation ? '#fff' : '#000']} />
     </>
-  )
+  ) : null
 }
 
 export default memo(Experience)

@@ -7,12 +7,9 @@ import wasm from 'vite-plugin-wasm'
 import topLevelAwait from 'vite-plugin-top-level-await'
 import path from 'path'
 
-// const development: boolean = !process.env.NODE_ENV || process.env.NODE_ENV === 'development'
-
 export default defineConfig({
   base: '/',
   define: {
-    // here is the main update
     global: 'globalThis',
   },
   optimizeDeps: {
@@ -25,7 +22,6 @@ export default defineConfig({
     },
   },
   plugins: [
-    // here is the main update
     wasm(),
     topLevelAwait(),
     react({
