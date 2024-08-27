@@ -1,5 +1,5 @@
 import React, { Fragment, Suspense, useEffect, useState } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import useScrollToTop from '@/hooks/useScrollToTop'
 import Landing from './pages/Landing'
 import Footer from './components/Footer'
@@ -8,7 +8,6 @@ import { binaryToHex, loadBinaryFile } from './utils/methods'
 import { HIRING_MSG } from './utils/contants'
 
 const App: React.FC = () => {
-  const { pathname } = useLocation()
   const [showMsg, setShowMsg] = useState(false)
   const [encryptedMessage, setEncryptedMessage] = useState<Uint8Array | null>(null)
 
