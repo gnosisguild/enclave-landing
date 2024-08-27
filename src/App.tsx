@@ -2,7 +2,6 @@ import React, { Fragment, Suspense, useEffect, useState } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import useScrollToTop from '@/hooks/useScrollToTop'
 import Landing from './pages/Landing'
-import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import { createAsciiArt } from './constants/asciiart'
 import { binaryToHex, loadBinaryFile } from './utils/methods'
@@ -35,8 +34,7 @@ const App: React.FC = () => {
 
   return (
     <Fragment>
-      <Suspense fallback={<div className='h-screen w-screen bg-white' />}>
-        {pathname !== '/' && <Navbar />}
+      <Suspense fallback={<div className='h-screen w-screen' />}>
         <div className='flex min-h-screen flex-grow flex-col'>
           <Routes>
             <Route path='/' element={<Landing />} />

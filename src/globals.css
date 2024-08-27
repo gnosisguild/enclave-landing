@@ -3,8 +3,19 @@
 @tailwind components;
 
 @layer base {
+  @font-face {
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Barlow-Regular.woff) format('woff');
+  }
   body {
-    @apply bg-white font-serif text-black antialiased;
+    @apply bg-enclaveWhite text-enclaveBlue font-sans antialiased;
+  }
+
+  * {
+    @apply box-border;
   }
 }
 
