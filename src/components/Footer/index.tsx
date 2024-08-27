@@ -4,12 +4,12 @@ const Footer = () => {
   const year = new Date().getFullYear()
 
   return (
-    <footer className='flex w-full gap-4 p-6'>
-      <div className='text-center text-gray-700 max-sm:w-full'>{year} © Enclave</div>
+    <footer className='flex w-full justify-between gap-4 p-6 sm:justify-start'>
+      <div className='text-EnclaveGrey'>{year} © Enclave</div>
       <div className=' text-gray-400 max-sm:hidden'>|</div>
-      <div className='text-center  text-gray-700 max-sm:w-full'>
+      <div className='text-EnclaveGrey '>
         Created by{' '}
-        <Link to='https://www.gnosisguild.org/' target='_blank' rel='noredirect' className='cursor-pointer text-gray-900 underline'>
+        <Link to='https://www.gnosisguild.org/' target='_blank' rel='noredirect' className='text-EnclaveGrey cursor-pointer underline'>
           Gnosis Guild
         </Link>
       </div>
