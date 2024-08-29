@@ -6,13 +6,12 @@ const config = {
     extend: {
       colors: colors,
       fontFamily: {
-        sans: ['sans'],
+        sans: ['Barlow', 'sans'],
         serif: ['serif'],
         display: ['sans'],
         mono: ['monospace'],
       },
     },
   },
-  plugins: [require('@tailwindcss/typography')],
 }
 export default config
