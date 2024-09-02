@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
+import { socialLinks } from '@/constants/socialLinks'
 
 const Footer = () => {
   const year = new Date().getFullYear()
@@ -26,27 +27,30 @@ const Footer = () => {
         <div className='text-EnclaveGrey'>Stay up to date with Enclave</div>
         <div className='w-full max-w-[400px] scale-75 sm:translate-x-[-13%]' ref={signupHolder} />
       </div>
-      <div className='flex w-full justify-between gap-4 sm:justify-start'>
-        <div className='text-EnclaveGrey'>{year} © Enclave</div>
-        <div className=' text-gray-400 max-sm:hidden'>|</div>
-        <div className='text-EnclaveGrey '>
-          Created by{' '}
-          <Link to='https://www.gnosisguild.org/' target='_blank' rel='noredirect' className='cursor-pointer text-EnclaveGrey underline'>
-            Gnosis Guild
-          </Link>
+      <div className='flex w-full flex-col items-center justify-between gap-4 sm:flex-row sm:justify-start'>
+        <div className='flex items-center justify-between gap-4 sm:justify-start'>
+          <div className='text-EnclaveGrey'>{year} © Enclave</div>
+          <div className=' text-gray-400 max-sm:hidden'>|</div>
+          <div className='text-EnclaveGrey '>
+            Created by{' '}
+            <Link to='https://www.gnosisguild.org/' target='_blank' rel='noredirect' className='cursor-pointer text-EnclaveGrey underline'>
+              Gnosis Guild
+            </Link>
+          </div>
         </div>
+        <div className=' text-gray-400 max-sm:hidden'>|</div>
+        <ul className='flex space-x-2 sm:space-x-4'>
+          {socialLinks.map(({ name, icon, url }, i) => {
+            return (
+              <li key={i} className='cursor-pointer p-1 text-EnclaveGrey hover:text-enclaveBlue'>
+                <Link to={url} id={name}>
+                  {icon}
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
       </div>
-      {/* <ul className='flex space-x-2 sm:space-x-4'>
-            {socialLinks.map(({ name, icon, url }, i) => {
-              return (
-                <li key={i} className='cursor-pointer rounded-full p-1 text-gray-500 duration-300 ease-in-out hover:text-gold-500 sm:p-2'>
-                  <Link to={url} id={name}>
-                    {icon}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul> */}
     </footer>
   )
 }

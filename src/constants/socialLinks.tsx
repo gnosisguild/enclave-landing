@@ -1,4 +1,4 @@
-import { FarcasterLogo, XLogo } from '@/components/Icons'
+import { FarcasterLogo, TelegramLogo, XLogo } from '@/components/Icons'
 import { ReactElement } from 'react'
 
 interface SocialLinksProps {
@@ -11,11 +11,16 @@ export const socialLinks: SocialLinksProps[] = [
   {
     name: 'twitter',
     icon: <XLogo size={24} />,
-    url: '#',
+    url: 'https://x.com/EnclaveE3',
   },
   {
     name: 'farcaster',
     icon: <FarcasterLogo size={24} />,
-    url: '#',
+    url: 'https://warpcast.com/enclavee3',
+  },
+  {
+    name: 'telegram',
+    icon: <TelegramLogo size={24} />,
+    url: 'https://t.me/enclave_e3',
   },
 ]
