@@ -7,6 +7,9 @@ const Content = () => {
         <a href='https://docs.enclave.gg/whitepaper' className='text-lg'>
           Read the whitepaper &#x2197;
         </a>
+        <a href='https://docs.enclave.gg/' className='text-lg' target='_blank'>
+          Explore the docs &#x2197;
+        </a>
         <a href='https://blog.enclave.gg/' className='text-lg' target='_blank'>
           Check out the blog &#x2197;
         </a>
