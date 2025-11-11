@@ -1,0 +1,7 @@
+{
+  "redirects": [
+    { "source": "/ciphernode", "destination": "tally.so/forms/mejpjo", "permanent": false },
+    { "source": "/build", "destination": "https://docs.enclave.gg/quick-start", "permanent": false },
+    { "source": "/partner", "destination": "https://enclave.gg", "permanent": false }
+  ]
+}
