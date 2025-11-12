@@ -13,7 +13,7 @@ on encrypted data from multiple sources — without exposing inputs or relying o
           <strong>Start building on the Devnet &#x2197;</strong>
         </a>
         <a href='https://tally.so/r/meJPjo' className='text-lg' target='_blank'>
-          <strong>Apply to become an early Ciphernode operator &#x2197;</strong>
+          <strong>Become a Ciphernode operator &#x2197;</strong>
         </a>
         <a href='https://docs.enclave.gg/whitepaper' className='text-lg'>
           <strong>Read the whitepaper &#x2197;</strong>
