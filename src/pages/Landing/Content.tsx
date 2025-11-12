@@ -5,7 +5,7 @@ const Content = () => {
       <div className='flex flex-col gap-4'>
         <p className='text-xl md:text-3xl'><strong>An open-source protocol for Collaborative Confidential Computation.</strong></p>
         <p className='text-lg md:text-xl'>Enclave’s Encrypted Execution Environments (E3s) let developers run programs<br />
-on encrypted data from multiple sources — without exposing inputs or relying on trusted hardware.
+on encrypted inputs from multiple sources — without exposing inputs or relying on trusted hardware.
 </p>
         <br />
         <br />
