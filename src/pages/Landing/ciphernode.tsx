@@ -1,28 +1,14 @@
-const Content = () => {
+import Content from './Content'
+
+const Landing = () => {
   return (
-    <div className='flex flex-col gap-8'>
-      <img src='/enclave-logo-solid.svg' alt='Enclave Logo' className='w-60' />      
-      <div className='flex flex-col gap-4'>
-        <p className='text-xl md:text-3xl'><strong>A protocol for verifiable, confidential programs.</strong></p>
-        <p className='text-lg md:text-xl'>Enclave’s Encrypted Execution Environments (E3s) let developers run programs<br />
-on encrypted data from multiple sources — without exposing inputs or relying on trusted hardware.
-</p>
-        <br />
-        <br />
-        <a href='https://docs.enclave.gg/' className='text-lg' target='_blank'>
-          <strong>Start building on the Devnet &#x2197;</strong>
-        </a>
-        <a href='https://tally.so/r/meJPjo' className='text-lg' target='_blank'>
-          <strong>Becomes a Ciphernode operator &#x2197;</strong>
-        </a>
-        <a href='https://docs.enclave.gg/whitepaper' className='text-lg'>
-          <strong>Read the whitepaper &#x2197;</strong>
-        </a>
-        <a href='https://blog.enclave.gg/' className='text-lg' target='_blank'>
-          <strong>Learn more on the blog &#x2197;</strong>
-        </a>
+    <main className='flex h-full w-full flex-grow flex-col px-6 py-8'>
+      <Content />
+      <div className='pointer-events-none absolute inset-0 z-10 h-full w-full touch-none p-4 sm:inset-auto sm:right-0 sm:top-0 sm:w-auto'>
+        <img src='/icon-stack.svg' alt='Enclave Stack' className='mx-auto h-full opacity-20 sm:opacity-40' />
       </div>
-    </div>
+    </main>
   )
 }
-export default Content
+
+export default Landing
