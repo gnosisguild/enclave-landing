@@ -6,6 +6,7 @@ import Footer from './components/Footer'
 import { createAsciiArt } from './constants/asciiart'
 import { binaryToHex, loadBinaryFile } from './utils/methods'
 import { HIRING_MSG } from './utils/contants'
+import Ciphernode from './pages/Landing/ciphernode'
 
 const App: React.FC = () => {
   const [showMsg, setShowMsg] = useState(false)
@@ -37,6 +38,7 @@ const App: React.FC = () => {
         <div className='flex min-h-screen flex-grow flex-col'>
           <Routes>
             <Route path='/' element={<Landing />} />
+            <Route path='/ciphernode' element={<Ciphernode />} />
           </Routes>
           <Footer />
         </div>
