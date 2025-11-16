@@ -1,4 +1,4 @@
-const Content = () => {
+veconst Content = () => {
   return (
     <div className='flex flex-col gap-8'>
       <img src='/enclave-logo-solid.svg' alt='Enclave Logo' className='w-60' />      
@@ -12,7 +12,7 @@ on encrypted inputs from multiple sources — without exposing inputs or relying
         <a href='https://docs.enclave.gg/' className='text-lg' target='_blank'>
           <strong>Start building on the Devnet &#x2197;</strong>
         </a>
-        <a href='https://tally.so/r/meJPjo' className='text-lg' target='_blank'>
+        <a href='https://enclave.gg/ciphernode' className='text-lg' target='_blank'>
           <strong>Become a Ciphernode operator &#x2197;</strong>
         </a>
         <a href='https://docs.enclave.gg/whitepaper' className='text-lg'>
