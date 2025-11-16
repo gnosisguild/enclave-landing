@@ -1,4 +1,4 @@
-veconst Content = () => {
+const Content = () => {
   return (
     <div className='flex flex-col gap-8'>
       <img src='/enclave-logo-solid.svg' alt='Enclave Logo' className='w-60' />      
