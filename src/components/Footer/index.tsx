@@ -39,6 +39,14 @@ const Footer = () => {
           </div>
         </div>
         <div className=' text-gray-400 max-sm:hidden'>|</div>
+          <div className='text-EnclaveGrey '>
+            Email us at {' '}
+            <Link to='mailto:comms@gnosisguild.org' target='_blank' rel='noredirect' className='cursor-pointer text-EnclaveGrey underline'>
+              comms@gnosisguild.org
+            </Link>
+          </div>
+        </div>
+        <div className=' text-gray-400 max-sm:hidden'>|</div>
         <ul className='flex space-x-2 sm:space-x-4'>
           {socialLinks.map(({ name, icon, url }, i) => {
             return (
