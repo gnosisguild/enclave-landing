@@ -59,7 +59,7 @@ const Footer = () => {
 
         {/* Email */}
         <div className='text-EnclaveGrey'>
-          Email us at{' '}
+          Contact us: {' '}
           <Link
             to='mailto:comms@gnosisguild.org'
             target='_blank'
