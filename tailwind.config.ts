@@ -6,9 +6,9 @@ const config = {
     extend: {
       colors: colors,
       fontFamily: {
-        sans: ['Barlow', 'sans'],
-        serif: ['serif'],
-        display: ['sans'],
+        sans: ['Gramercy', 'serif'],
+        serif: ['Gramercy', 'serif'],
+        display: ['Inter', 'sans-serif'],
         mono: ['monospace'],
       },
     },
