@@ -6,19 +6,19 @@ export default function Content() {
   ]
 
   return (
-    <main className="min-h-screen bg-[#f7f7f6] text-neutral-950 antialiased">
+    <main className="min-h-screen bg-[#d9fce8] text-neutral-950 antialiased font-sans">
       <div className="mx-auto w-full max-w-6xl px-6 py-16 md:px-10 md:py-20 lg:px-12 lg:py-24">
         <img
-          src="/interfold-logo.svg"
+          src="/interfold-logo.png"
           alt="The Interfold"
-          className="w-36 opacity-90"
+          className="w-[170px] md:w-[190px] opacity-90"
         />
 
         <div className="mt-20 grid gap-x-14 gap-y-12 lg:grid-cols-[minmax(0,_1fr)_360px]">
 
           <div className="max-w-4xl">
             <div className="inline-flex flex-col">
-              <h1 className="text-balance text-5xl font-semibold leading-[0.9] tracking-[-0.08em] md:text-7xl lg:text-[5.5rem]">
+              <h1 className="font-display text-balance text-5xl font-bold leading-[0.9] tracking-[-0.08em] md:text-7xl lg:text-[5.5rem]">
                 <span className="block">Private Inputs.</span>
                 <span className="-ml-[0.02em] block whitespace-nowrap">Collective Outcomes.</span>
               </h1>
@@ -73,7 +73,7 @@ export default function Content() {
         </div>
 
         <div className="mt-20 border-t border-neutral-200 pt-14">
-          <div className="grid grid-cols-1 gap-y-6 text-sm uppercase tracking-[0.18em] text-neutral-400 md:grid-cols-3 md:gap-y-8 md:text-base">
+          <div className="grid grid-cols-1 gap-y-6 text-sm uppercase tracking-[0.18em] text-neutral-500 md:grid-cols-2 lg:grid-cols-3 md:gap-y-8 md:text-base">
             <span>private governance</span>
             <span>confidential auctions</span>
             <span>institutional collaboration</span>
@@ -85,7 +85,7 @@ export default function Content() {
             <span>private voting</span>
           </div>
 
-          <p className="mt-16 text-sm uppercase tracking-[0.2em] text-neutral-400">
+          <p className="mt-16 text-sm uppercase tracking-[0.2em] text-neutral-500">
             Open source protocol. Built by Gnosis Guild.
           </p>
         </div>
