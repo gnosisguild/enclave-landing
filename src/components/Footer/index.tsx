@@ -1,91 +1,62 @@
 import { Link } from 'react-router-dom'
-import { useEffect, useRef } from 'react'
-import { socialLinks } from '@/constants/socialLinks'
 
 const Footer = () => {
-  const year = new Date().getFullYear()
-  const signupHolder = useRef<HTMLDivElement>(null)
-
-  useEffect(() => {
-    const script = document.createElement('script')
-
-    script.setAttribute('data-button-color', '#60C2FF')
-    script.setAttribute('data-button-text-color', '#FFFFFF')
-    script.setAttribute('data-site', 'https://blog.enclave.gg/')
-    script.src = 'https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js'
-    script.async = true
-
-    signupHolder.current?.appendChild(script)
-
-    return () => {
-      signupHolder.current?.removeChild(script)
-    }
-  }, [])
-
   return (
-    <footer className='flex w-full flex-col gap-4 p-6 text-base'>
-
-      {/* Signup */}
-      <div className='flex flex-col items-center justify-center gap-2 sm:items-start'>
-        <div className='text-EnclaveGrey'>Stay up to date with Enclave</div>
-        <div
-          className='w-full max-w-[400px] scale-75 sm:translate-x-[-13%]'
-          ref={signupHolder}
-        />
-      </div>
-
-      {/* Middle row */}
-      <div className='flex w-full flex-col items-center justify-between gap-4 sm:flex-row sm:justify-start'>
-
-        {/* Left group */}
-        <div className='flex items-center gap-4 sm:justify-start'>
-          <div className='text-EnclaveGrey'>{year} © Enclave</div>
-          <div className='text-gray-400 max-sm:hidden'>|</div>
-          <div className='text-EnclaveGrey'>
-            Created by{' '}
+    <footer className='w-full px-6 pb-8 pt-6 md:px-10 lg:px-12'>
+      <div className='mx-auto flex w-full max-w-6xl flex-col gap-6 border-t border-neutral-200 pt-8 text-sm text-neutral-600 md:flex-row md:items-start md:justify-between'>
+        <div className='max-w-md'>
+          <p className='uppercase tracking-[0.18em] text-neutral-500'>
+            Open source protocol. Built by{' '}
             <Link
               to='https://www.gnosisguild.org/'
               target='_blank'
               rel='noopener noreferrer'
-              className='cursor-pointer text-EnclaveGrey underline'
+              className='transition hover:text-neutral-900'
             >
               Gnosis Guild
             </Link>
-          </div>
+            .
+          </p>
         </div>
 
-        {/* Divider */}
-        <div className='text-gray-400 max-sm:hidden'>|</div>
+        <div className='flex flex-col gap-2 text-sm uppercase tracking-[0.18em] text-neutral-500 md:items-end'>
+          <Link
+            to='https://x.com/theinterfold'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition hover:text-neutral-900'
+          >
+            X
+          </Link>
 
-        {/* Email */}
-        <div className='text-EnclaveGrey'>
-          Contact us: {' '}
+          <Link
+            to='https://t.me/enclave_e3'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition hover:text-neutral-900'
+          >
+            Telegram
+          </Link>
+
+          <Link
+            to='https://github.com/theinterfold'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='transition hover:text-neutral-900'
+          >
+            GitHub
+          </Link>
+
           <Link
             to='mailto:comms@gnosisguild.org'
             target='_blank'
             rel='noopener noreferrer'
-            className='cursor-pointer text-EnclaveGrey underline'
+            className='transition hover:text-neutral-900'
           >
-            comms@gnosisguild.org
+            Email
           </Link>
         </div>
-
-        {/* Divider */}
-        <div className='text-gray-400 max-sm:hidden'>|</div>
-
-        {/* Social links */}
-        <ul className='flex space-x-2 sm:space-x-4'>
-          {socialLinks.map(({ name, icon, url }, i) => (
-            <li key={i} className='cursor-pointer p-1 text-EnclaveGrey hover:text-enclaveBlue'>
-              <Link to={url} id={name} target='_blank' rel='noopener noreferrer'>
-                {icon}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
       </div>
-
     </footer>
   )
 }
