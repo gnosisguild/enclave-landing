@@ -10,6 +10,13 @@
     font-display: swap;
     src: url(/fonts/Barlow-Regular.woff) format('woff');
   }
+  @font-face {
+  font-family: 'Gramercy';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/Gramercy-Regular.woff2') format('woff2');
+  }
   body {
     @apply bg-enclaveWhite text-enclaveBlue font-sans antialiased;
   }
