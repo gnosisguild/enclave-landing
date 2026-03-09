@@ -1,33 +1,28 @@
-import React, { useEffect } from 'react'
-
-const Ciphernode: React.FC = () => {
-  useEffect(() => {
-    // Load the Tally embed script
-    const script = document.createElement('script')
-    script.src = 'https://tally.so/widgets/embed.js'
-    script.async = true
-    document.body.appendChild(script)
-
-    // Clean up on unmount
-    return () => {
-      document.body.removeChild(script)
-    }
-  }, [])
-
+const Content = () => {
   return (
-    <div className="relative w-full h-screen">
-      <iframe
-        data-tally-src="https://tally.so/r/meJPjo"
-        title="Request Early Access to Run an Enclave Ciphernode"
-        width="100%"
-        height="100%"
-        frameBorder="0"
-        marginHeight={0}
-        marginWidth={0}
-        className="absolute inset-0 border-0"
-      />
+    <div className='flex flex-col gap-8'>
+      <img src='/enclave-logo-solid.svg' alt='Enclave Logo' className='w-60' />      
+      <div className='flex flex-col gap-4'>
+        <p className='text-xl md:text-3xl'><strong>An open-source protocol for Collaborative Confidential Computation.</strong></p>
+        <p className='text-lg md:text-xl'>Enclave’s Encrypted Execution Environments (E3s) let developers run programs<br />
+on encrypted inputs from multiple sources — without exposing inputs or relying on trusted hardware.
+</p>
+        <br />
+        <br />
+        <a href='https://docs.enclave.gg/' className='text-lg' target='_blank'>
+          <strong>Start building on the Devnet &#x2197;</strong>
+        </a>
+        <a href='https://enclave.gg/ciphernode' className='text-lg' target='_blank'>
+          <strong>Become a Ciphernode operator &#x2197;</strong>
+        </a>
+        <a href='https://docs.enclave.gg/whitepaper' className='text-lg'>
+          <strong>Read the whitepaper &#x2197;</strong>
+        </a>
+        <a href='https://blog.enclave.gg/' className='text-lg' target='_blank'>
+          <strong>Learn more on the blog &#x2197;</strong>
+        </a>
+      </div>
     </div>
   )
 }
-
-export default Ciphernode
+export default Content
