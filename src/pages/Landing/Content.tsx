@@ -77,11 +77,12 @@ export default function Content() {
             </aside>
           </div>
 
-          <div className="mt-10 max-w-[420px] font-serif text-[16px] leading-[0.98] text-neutral-900 sm:text-[18px] md:mt-12 md:max-w-[520px] md:text-[20px]">
-            <p>Stronger democratic systems.</p>
-            <p className="pl-2 md:pl-3">Collaborative intelligence.</p>
-            <p className="pl-4 md:pl-6">Fairer auctions.</p>
-          </div>
+        <div className="mt-10 max-w-[420px] pl-6 md:pl-8 font-serif text-[16px] leading-[0.98] text-neutral-900 sm:text-[18px] md:mt-12 md:max-w-[520px] md:text-[20px]">
+          <p>Stronger democratic systems.</p>
+          <p>Collaborative intelligence.</p>
+          <p>Fairer auctions.</p>
+        </div>
+        
         </div>
       </main>
     </>
