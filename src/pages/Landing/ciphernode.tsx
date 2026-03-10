@@ -7,39 +7,49 @@ export default function Content() {
 
   return (
     <main className="min-h-screen bg-[#d9fce8] text-neutral-950 antialiased font-sans">
-      <div className="mx-auto w-full max-w-6xl px-6 py-16 md:px-10 md:py-20 lg:px-12 lg:py-24">
+
+      <div className="mx-auto w-full max-w-6xl px-6 py-12 md:px-10 md:py-14 lg:px-12 lg:py-16">
+
+        {/* Logo */}
 
         <img
           src="/interfold-logo.png"
           alt="The Interfold"
-          className="w-[170px] md:w-[190px] opacity-90"
+          className="w-[180px] md:w-[210px] opacity-95"
         />
 
-        <div className="mt-20 grid gap-x-14 gap-y-12 lg:grid-cols-[minmax(0,_1fr)_360px]">
+        {/* Main grid */}
+
+        <div className="mt-12 grid gap-x-14 gap-y-12 lg:grid-cols-[minmax(0,_1fr)_360px]">
 
           {/* LEFT COLUMN */}
 
-          <div className="max-w-4xl">
+          <div className="max-w-4xl border-l border-neutral-300 pl-6">
 
-            <h1 className="font-display text-balance text-5xl font-bold leading-[0.9] tracking-[-0.08em] md:text-7xl lg:text-[5.5rem]">
-              <span className="block">Private Inputs.</span>
+            <h1 className="font-display text-balance text-5xl font-bold leading-[0.95] tracking-[-0.03em] md:text-7xl lg:text-[5.5rem]">
+
+              <span className="block">
+                Private Inputs.
+              </span>
+
               <span className="-ml-[0.02em] block whitespace-nowrap">
                 Collective Outcomes.
               </span>
+
             </h1>
 
-            <p className="mt-14 ml-10 md:ml-24 text-xl italic text-neutral-700 md:text-2xl max-w-2xl">
-              Confidential coordination infrastructure for multiparty systems
+            <p className="mt-10 text-xl italic text-neutral-700 md:text-2xl max-w-2xl">
+              Infrastructure for confidential coordination between independent parties
             </p>
 
-            <div className="mt-12 max-w-[42rem] space-y-6 text-[18px] leading-8 text-neutral-700 md:text-[19px] md:leading-9">
+            <div className="mt-10 max-w-[42rem] space-y-6 text-[18px] leading-8 text-neutral-700 md:text-[19px] md:leading-9">
 
               <p>
                 Much of our coordination now happens inside digital systems.
                 Markets clear. Votes are tallied. Models are trained.
               </p>
 
-              <p className="ml-10 md:ml-24">
+              <p>
                 But the participants in these systems rarely share the
                 conditions required to coordinate safely.
               </p>
@@ -50,7 +60,7 @@ export default function Content() {
                 verifiable outcomes from private inputs.
               </p>
 
-              <p className="ml-10 md:ml-24">
+              <p>
                 Result: fairer auctions, stronger democratic systems, and
                 collaborative intelligence without custody, exposure, or
                 trusted hardware.
@@ -62,9 +72,9 @@ export default function Content() {
 
           {/* RIGHT COLUMN LINKS */}
 
-          <aside className="max-w-sm lg:pt-[22rem] lg:pl-6">
+          <aside className="max-w-sm lg:pt-[20rem] lg:pl-6">
 
-            <div className="flex flex-col gap-4 text-[1.8rem] leading-[1.1] font-medium">
+            <div className="flex flex-col gap-3 text-[2rem] leading-[1.05] md:text-[2.35rem]">
 
               {links.map((link) => (
                 <a
@@ -72,13 +82,14 @@ export default function Content() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group flex items-baseline gap-4 text-neutral-900 transition hover:translate-x-0.5"
+                  className="group flex items-baseline gap-4 font-medium text-neutral-900 transition hover:translate-x-0.5"
                 >
-                  <span className="text-xl text-neutral-400 transition group-hover:text-neutral-950">
+
+                  <span className="text-xl text-neutral-400 transition group-hover:text-neutral-950 md:text-2xl">
                     →
                   </span>
 
-                  <span className="tracking-[-0.02em]">
+                  <span className="tracking-[-0.04em] lowercase">
                     {link.label}
                   </span>
 
@@ -91,7 +102,7 @@ export default function Content() {
 
         </div>
 
-        {/* USE CASE LIST */}
+        {/* Use case grid */}
 
         <div className="mt-20 border-t border-neutral-200 pt-14">
 
@@ -102,53 +113,14 @@ export default function Content() {
             <span>institutional collaboration</span>
             <span>multi-agent systems</span>
             <span>cross-organizational analytics</span>
-            <span>coordinated markets</span>
-            <span>collective intelligence</span>
-            <span>data collaboration</span>
             <span>private voting</span>
-
-          </div>
-
-          {/* FOOTER */}
-
-          <div className="mt-16 text-sm text-neutral-500 flex flex-col gap-2 font-footer">
-
-            <p>
-              Open source protocol. Built by
-              <a
-                href="https://www.gnosisguild.org/"
-                target="_blank"
-                className="ml-1 underline"
-              >
-                Gnosis Guild
-              </a>
-            </p>
-
-            <div className="flex flex-wrap gap-x-6 gap-y-2 text-neutral-600">
-
-              <a href="https://github.com/gnosisguild/enclave" target="_blank">
-                GitHub
-              </a>
-
-              <a href="https://t.me/enclave_e3" target="_blank">
-                Telegram
-              </a>
-
-              <a href="https://x.com/theinterfold" target="_blank">
-                X
-              </a>
-
-              <a href="mailto:comms@gnosisguild.com">
-                Email
-              </a>
-
-            </div>
 
           </div>
 
         </div>
 
       </div>
+
     </main>
   )
 }
