@@ -1,7 +1,7 @@
 export default function Content() {
   const links = [
     { label: 'Explore the docs', href: 'https://docs.theinterfold.com/' },
-    { label: 'Run a ciphernode', href: 'https://tally.so/r/meJPjo' },
+    { label: 'Run a ciphernode', href: '/ciphernode' },
     { label: 'Read the blog', href: 'https://blog.theinterfold.com/' },
   ]
 
