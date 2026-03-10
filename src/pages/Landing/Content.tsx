@@ -61,7 +61,7 @@ export default function Content() {
               </div>
             </div>
 
-            <aside className="md:pt-12">
+            <aside className="md:pt-16">
               <div className="flex flex-col gap-1 font-sans text-[16px] font-semibold leading-[1.1] text-neutral-950 sm:text-[17px]">
                 {links.map((link) => (
                   <a
