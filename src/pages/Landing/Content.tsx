@@ -1,9 +1,9 @@
 export default function Content() {
   const links = [
-    { label: 'Explore the docs', href: 'https://docs.theinterfold.com/' },
-    { label: 'Run a ciphernode', href: 'https://theinterfold.com/ciphernode' },
-    { label: 'Read the blog', href: 'https://blog.theinterfold.com/' },
-  ]
+  { label: 'Explore the docs', href: 'https://docs.theinterfold.com/' },
+  { label: 'Run a ciphernode', href: '/ciphernode' },
+  { label: 'Read the blog', href: 'https://blog.theinterfold.com/' },
+]
 
   return (
     <>
@@ -59,26 +59,25 @@ export default function Content() {
               </div>
             </div>
 
-            <aside className="max-w-sm lg:pt-[18rem] lg:pl-6">
-              <div className="flex flex-col gap-3 text-[2rem] leading-[1.05] md:text-[2.35rem]">
-                {links.map((link) => (
-                  <a
-                    key={link.label}
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-baseline gap-4 font-medium text-neutral-900 transition hover:translate-x-0.5"
-                  >
-                    <span className="text-[1.6rem] font-bold text-neutral-500 transition group-hover:text-neutral-950 md:text-[1.8rem]">
-                      →
-                    </span>
-                    <span className="tracking-[-0.04em]">{link.label}</span>
-                  </a>
-                ))}
-              </div>
-            </aside>
+        <aside className="max-w-sm lg:pt-[18rem] lg:pl-6">
+          <div className="flex flex-col gap-3 text-[2rem] leading-[1.05] md:text-[2.35rem]">
+            {links.map((link) => (
+              <a
+                key={link.label}
+                href={link.href}
+                className="group flex items-baseline gap-4 font-medium text-neutral-900 transition duration-500 ease-out hover:translate-x-0.5 hover:duration-150"
+              >
+                <span className="text-[1.6rem] font-bold text-neutral-500 transition group-hover:text-neutral-950 md:text-[1.8rem]">
+                  →
+                </span>
+                <span className="tracking-[-0.04em]">{link.label}</span>
+              </a>
+            ))}
           </div>
+        </aside>
 
+
+          
           <div className="mt-20 pt-4">
             <div className="grid grid-cols-12 items-start text-neutral-900">
               <span className="col-span-6 text-[1.35rem] font-medium leading-[1.02] tracking-[-0.035em] md:text-[1.7rem] lg:text-[1.9rem]">
