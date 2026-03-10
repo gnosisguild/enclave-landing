@@ -8,7 +8,7 @@ export default function Content() {
   return (
     <>
       <header className="w-full bg-[#d9fce8]">
-        <div className="border-b border-neutral-200/60 px-4 py-2 text-center text-[12px] text-neutral-700 sm:px-6 sm:text-sm md:px-10 lg:px-12">
+        <div className="border-b border-neutral-200/60 px-4 py-3 text-center text-[12px] text-neutral-700 sm:px-6 sm:text-sm md:px-10 lg:px-12">
           Enclave is now The Interfold.{' '}
           <a
             href="https://blog.theinterfold.com"
@@ -18,7 +18,7 @@ export default function Content() {
           </a>
         </div>
 
-        <div className="mx-auto w-full max-w-5xl px-5 py-2 sm:px-6 md:px-10 lg:px-12">
+        <div className="mx-auto w-full max-w-5xl px-5 py-3 sm:px-6 md:px-10 lg:px-12">
           <a href="https://theinterfold.com" className="inline-block">
             <img
               src="/interfold-logo.png"
@@ -30,9 +30,9 @@ export default function Content() {
       </header>
 
       <main className="min-h-screen bg-[#d9fce8] text-neutral-950 antialiased">
-        <div className="mx-auto max-w-5xl px-5 pb-16 pt-14 sm:px-6 sm:pt-16 md:px-10 md:pb-20 md:pt-24 lg:px-12 lg:pt-28">
+        <div className="mx-auto max-w-5xl px-5 pb-16 pt-12 sm:px-6 sm:pt-14 md:px-10 md:pb-20 md:pt-20 lg:px-12 lg:pt-24">
           <div className="max-w-[900px]">
-            <h1 className="font-sans text-[2.9rem] font-bold leading-[0.9] tracking-[-0.06em] sm:text-[4.2rem] md:text-[5.6rem] lg:text-[6.35rem]">
+            <h1 className="font-sans text-[2.65rem] font-bold leading-[0.9] tracking-[-0.06em] sm:text-[3.7rem] md:text-[5rem] lg:text-[5.6rem]">
               <span className="block">Private Inputs.</span>
               <span className="block whitespace-nowrap">Collective Outcomes.</span>
             </h1>
@@ -77,10 +77,10 @@ export default function Content() {
             </aside>
           </div>
 
-          <div className="mt-10 max-w-[340px] font-serif text-[16px] leading-[0.98] text-neutral-900 sm:text-[18px] md:mt-12 md:max-w-[420px] md:text-[20px]">
+          <div className="mt-10 max-w-[340px] font-serif text-[16px] leading-[0.98] text-neutral-900 sm:text-[18px] md:mt-12 md:max-w-[520px] md:text-[20px]">
             <p>Stronger democratic systems.</p>
-            <p>Collaborative intelligence.</p>
-            <p>Fairer auctions.</p>
+            <p className="ml-6 md:ml-10">Collaborative intelligence.</p>
+            <p className="ml-12 md:ml-20">Fairer auctions.</p>
           </div>
         </div>
       </main>
