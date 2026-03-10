@@ -1,8 +1,7 @@
 export default function RunCiphernode() {
   return (
-    <>
-      {/* Header stripe (same as homepage) */}
-      <header className="w-full border-b border-neutral-200/60 bg-neutral-50">
+    <div className="min-h-screen w-full bg-[#d9fce8] text-neutral-950 font-sans">
+      <header className="relative z-20 w-full border-b border-neutral-200/60 bg-neutral-50">
         <div className="mx-auto w-full max-w-6xl px-6 py-5 md:px-10 lg:px-12">
           <a href="/" className="inline-block">
             <img
@@ -14,17 +13,13 @@ export default function RunCiphernode() {
         </div>
       </header>
 
-      {/* Green page */}
-      <main className="min-h-screen bg-[#d9fce8] text-neutral-950 font-sans">
+      <main className="relative z-10 w-full">
         <div className="mx-auto max-w-3xl px-6 py-16">
-
-          <h1 className="font-display text-4xl font-bold tracking-[-0.03em] mb-10">
+          <h1 className="mb-10 font-display text-4xl font-bold tracking-[-0.03em]">
             Run a Ciphernode
           </h1>
 
-          {/* Native-feeling form container */}
-          <div className="rounded-xl bg-white/40 backdrop-blur-sm shadow-sm border border-black/5 overflow-hidden">
-
+          <div className="overflow-hidden rounded-xl border border-black/5 bg-white/40 shadow-sm backdrop-blur-sm">
             <iframe
               src="https://tally.so/r/meJPjo"
               width="100%"
@@ -35,11 +30,9 @@ export default function RunCiphernode() {
               title="Run a Ciphernode"
               className="w-full"
             />
-
           </div>
-
         </div>
       </main>
-    </>
+    </div>
   )
 }
