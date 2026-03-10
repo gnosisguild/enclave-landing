@@ -11,7 +11,7 @@ export default function Content() {
         <div className="border-b border-neutral-200/60 px-4 py-2 text-center text-[12px] text-neutral-700 sm:px-6 sm:text-sm md:px-10 lg:px-12">
           Enclave is now The Interfold.{' '}
           <a
-            href="https://blog.theinterfold.com/blah"
+            href="https://blog.theinterfold.com"
             className="underline underline-offset-2 transition hover:text-neutral-900"
           >
             Learn more.
@@ -31,20 +31,20 @@ export default function Content() {
 
       <main className="min-h-screen bg-[#d9fce8] text-neutral-950 antialiased">
         <div className="mx-auto max-w-5xl px-5 pb-16 pt-14 sm:px-6 sm:pt-16 md:px-10 md:pb-20 md:pt-24 lg:px-12 lg:pt-28">
-          <div className="max-w-[860px]">
-            <h1 className="font-sans text-[2.9rem] font-bold leading-[0.9] tracking-[-0.055em] sm:text-[4.1rem] md:text-[5.25rem] lg:text-[6.2rem]">
+          <div className="max-w-[900px]">
+            <h1 className="font-sans text-[2.9rem] font-bold leading-[0.9] tracking-[-0.06em] sm:text-[4.2rem] md:text-[5.6rem] lg:text-[6.35rem]">
               <span className="block">Private Inputs.</span>
-              <span className="block">Collective Outcomes.</span>
+              <span className="block whitespace-nowrap">Collective Outcomes.</span>
             </h1>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-x-16 gap-y-10 sm:mt-14 md:grid-cols-[minmax(0,1fr)_220px] md:items-start lg:mt-16 lg:gap-x-20">
+          <div className="mt-12 grid grid-cols-1 gap-x-14 gap-y-10 sm:mt-14 md:grid-cols-[minmax(0,1fr)_220px] md:items-start lg:mt-16 lg:gap-x-18">
             <div className="max-w-[560px]">
               <p className="font-sans text-[11px] uppercase tracking-[0.22em] text-neutral-600 sm:text-[12px]">
                 Infrastructure for confidential coordination
               </p>
 
-              <div className="mt-6 max-w-[540px] font-serif text-[15px] leading-[1.06] text-neutral-800 sm:text-[17px] md:mt-7 md:text-[18px]">
+              <div className="mt-6 max-w-[540px] font-serif text-[15px] leading-[1.04] text-neutral-800 sm:text-[17px] md:mt-7 md:text-[18px]">
                 <p>
                   <strong>The Interfold</strong> is a distributed network for confidential
                   coordination. Independent parties compute shared, verifiable outcomes
