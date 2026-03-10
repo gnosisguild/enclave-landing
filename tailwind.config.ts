@@ -6,8 +6,9 @@ const config = {
     extend: {
       colors: colors,
       fontFamily: {
-        display: ['Gramercy', 'serif'],   // headings
-        sans: ['Inter', 'system-ui', 'sans-serif'], // body
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+        serif: ['Gramercy', 'serif'],
+        display: ['Inter', 'system-ui', 'sans-serif'],
         footer: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['monospace'],
       },
