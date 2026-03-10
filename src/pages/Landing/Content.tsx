@@ -95,7 +95,7 @@ export default function Content() {
 
           <div className="mt-8 overflow-hidden rounded-[1.5rem] border border-black/5 bg-white/20 md:mt-10">
             <img
-              src="/interfold-bottom-image.png"
+              src="/interfold-meta.jpg"
               alt="The Interfold"
               className="h-[220px] w-full object-cover sm:h-[280px] md:h-[360px] lg:h-[420px]"
             />
