@@ -1,7 +1,7 @@
 export default function RunCiphernode() {
   return (
     <>
-      <header className="w-full border-b border-neutral-200/60 bg-neutral-50">
+      <header className="w-full bg-neutral-50">
         <div className="mx-auto w-full max-w-6xl px-6 py-5 md:px-10 lg:px-12">
           <a href="https://theinterfold.com" className="inline-block">
             <img
