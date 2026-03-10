@@ -8,6 +8,7 @@ export default function Content() {
   return (
     <>
       <header className="w-full bg-[#d9fce8]">
+
         {/* Announcement bar */}
         <div className="bg-black px-4 py-2 text-center text-[13px] text-neutral-100 sm:px-6 sm:text-[15px] md:px-10 lg:px-12">
           Enclave is now The Interfold.{" "}
@@ -20,7 +21,7 @@ export default function Content() {
         </div>
 
         {/* Logo */}
-        <div className="mx-auto w-full max-w-5xl px-5 py-2 sm:px-6 md:px-10 lg:px-12">
+        <div className="mx-auto w-full max-w-5xl px-5 pt-4 pb-2 sm:px-6 md:px-10 lg:px-12">
           <a href="https://theinterfold.com" className="inline-block">
             <img
               src="/interfold-logo.png"
@@ -29,6 +30,7 @@ export default function Content() {
             />
           </a>
         </div>
+
       </header>
 
       <main className="bg-[#d9fce8] text-neutral-950 antialiased">
