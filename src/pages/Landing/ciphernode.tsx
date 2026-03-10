@@ -7,7 +7,7 @@ export default function RunCiphernode() {
         <div className="bg-black px-4 py-2 text-center font-serif text-[13px] text-[#d9fce8] sm:px-6 sm:text-[15px] md:px-10 lg:px-12">
   Enclave is now The Interfold.{" "}
   <a
-    href="https://blog.theinterfold.com"
+    href="https://blog.theinterfold.com/from-enclave-to-the-interfold/"
     className="underline underline-offset-2 transition hover:opacity-80"
   >
     Learn more.
