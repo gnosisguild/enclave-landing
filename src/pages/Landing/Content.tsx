@@ -54,15 +54,9 @@ export default function Content() {
 
               <div className="mt-6 max-w-[540px] font-serif text-[15px] leading-[1.05] text-neutral-800 sm:text-[17px] md:text-[18px]">
                 <p>
-                  <strong>The Interfold</strong> is a distributed network for confidential
-                  coordination. Independent parties compute shared, verifiable outcomes
-                  from private inputs.
-                </p>
-
-                <p className="mt-4">
-                  Result: fairer auctions, stronger democratic systems, and
-                  collaborative intelligence without custody, exposure, or trusted
-                  hardware.
+                  <strong>The Interfold</strong> enables independent parties to produce shared, verifiable outcomes 
+                  from private inputs. It introduces a structural fold in digital systems, making coordination possible without 
+                  custody, exposure, or trusted hardware.
                 </p>
               </div>
             </div>
