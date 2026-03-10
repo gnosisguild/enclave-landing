@@ -30,23 +30,23 @@ export default function Content() {
       </header>
 
       <main className="bg-[#d9fce8] text-neutral-950 antialiased">
-        <div className="mx-auto max-w-5xl px-5 pb-16 pt-14 sm:px-6 sm:pt-16 md:px-10 md:pb-20 md:pt-24 lg:px-12 lg:pt-28">
+        <div className="mx-auto max-w-5xl px-5 pb-20 pt-14 sm:px-6 sm:pt-16 md:px-10 md:pt-24 lg:px-12 lg:pt-28">
 
-          <div className="max-w-[860px]">
-            <h1 className="font-sans text-[2.75rem] font-bold leading-[0.92] tracking-[-0.05em] sm:text-[3.9rem] md:text-[5.15rem] lg:text-[5.6rem]">
+          <div className="max-w-[820px]">
+            <h1 className="font-sans text-[2.4rem] font-bold leading-[0.94] tracking-[-0.045em] sm:text-[3.4rem] md:text-[4.5rem] lg:text-[5.1rem]">
               <span className="block">Private Inputs.</span>
               <span className="block whitespace-nowrap">Collective Outcomes.</span>
             </h1>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-x-14 gap-y-10 sm:mt-14 md:grid-cols-[minmax(0,1fr)_220px] md:items-start lg:mt-16">
+          <div className="mt-14 grid grid-cols-1 gap-x-16 gap-y-10 md:grid-cols-[minmax(0,1fr)_220px] md:items-start">
 
             <div className="max-w-[560px]">
               <p className="font-sans text-[11px] uppercase tracking-[0.22em] text-neutral-600 sm:text-[12px]">
                 Infrastructure for confidential coordination
               </p>
 
-              <div className="mt-6 max-w-[540px] font-serif text-[15px] leading-[1.04] text-neutral-800 sm:text-[17px] md:mt-7 md:text-[18px]">
+              <div className="mt-6 max-w-[540px] font-serif text-[15px] leading-[1.05] text-neutral-800 sm:text-[17px] md:text-[18px]">
                 <p>
                   <strong>The Interfold</strong> is a distributed network for confidential
                   coordination. Independent parties compute shared, verifiable outcomes
@@ -61,8 +61,8 @@ export default function Content() {
               </div>
             </div>
 
-            <aside className="md:pt-8 lg:pt-10">
-              <div className="flex flex-col gap-1 font-sans text-[15px] font-semibold leading-[1.05] text-neutral-950 sm:text-[16px] md:text-[17px]">
+            <aside className="md:pt-12">
+              <div className="flex flex-col gap-1 font-sans text-[16px] font-semibold leading-[1.1] text-neutral-950 sm:text-[17px]">
                 {links.map((link) => (
                   <a
                     key={link.label}
@@ -80,7 +80,7 @@ export default function Content() {
 
           </div>
 
-          <div className="mt-12 mb-20 max-w-[420px] pl-8 md:pl-10 font-serif text-[16px] leading-[1] text-neutral-900 sm:text-[18px] md:mt-14 md:max-w-[520px] md:text-[20px]">
+          <div className="mt-14 mb-20 max-w-[420px] pl-8 md:pl-10 font-serif text-[16px] leading-[1] text-neutral-900 sm:text-[18px] md:max-w-[520px] md:text-[20px]">
             <p>Stronger democratic systems.</p>
             <p>Collaborative intelligence.</p>
             <p>Fairer auctions.</p>
