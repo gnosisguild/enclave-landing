@@ -11,7 +11,7 @@ export default function Content() {
         <div className="border-b border-neutral-200/60 px-4 py-2 text-center text-[12px] text-neutral-700 sm:px-6 sm:text-sm md:px-10 lg:px-12">
           Enclave is now The Interfold.{' '}
           <a
-            href="https://blog.theinterfold.com/blah"
+            href="https://blog.theinterfold.com"
             className="underline underline-offset-2 transition hover:text-neutral-900"
           >
             Learn more.
