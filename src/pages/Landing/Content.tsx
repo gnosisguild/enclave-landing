@@ -81,9 +81,9 @@ export default function Content() {
           </div>
 
           <div className="mt-14 mb-20 max-w-[420px] pl-8 md:pl-10 font-serif text-[16px] leading-[1] text-neutral-900 sm:text-[18px] md:max-w-[520px] md:text-[20px]">
+            <p>Fairer auctions.</p>
             <p>Stronger democratic systems.</p>
             <p>Collaborative intelligence.</p>
-            <p>Fairer auctions.</p>
           </div>
 
         </div>
