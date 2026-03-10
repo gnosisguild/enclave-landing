@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
-    <footer className="w-full px-6 pb-8 pt-6 md:px-10 lg:px-12">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 border-t border-neutral-200 pt-8 text-sm text-neutral-600 md:flex-row md:items-start md:justify-between">
+    <footer className="w-full bg-neutral-50 px-6 pb-8 pt-8 md:px-10 lg:px-12">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 text-sm text-neutral-600 md:flex-row md:items-start md:justify-between">
         <div className="max-w-md font-sans">
           <p className="uppercase tracking-[0.18em] text-neutral-500">
             Open source protocol. Built by{' '}
@@ -49,8 +49,6 @@ const Footer = () => {
 
           <Link
             to="mailto:comms@gnosisguild.org"
-            target="_blank"
-            rel="noopener noreferrer"
             className="transition hover:text-neutral-900"
           >
             Email
