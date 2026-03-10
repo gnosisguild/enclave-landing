@@ -1,7 +1,7 @@
 export default function Content() {
   const links = [
     { label: 'Explore the docs', href: 'https://docs.theinterfold.com/' },
-    { label: 'Run a ciphernode', href: 'https://www.theinterfold.com/ciphernode' },
+    { label: 'Run a ciphernode', href: 'https://theinterfold.com/ciphernode' },
     { label: 'Read the blog', href: 'https://blog.theinterfold.com/' },
   ]
 
@@ -9,15 +9,17 @@ export default function Content() {
     <>
       <header className="w-full border-b border-neutral-200/60 bg-white">
         <div className="mx-auto w-full max-w-6xl px-6 py-5 md:px-10 lg:px-12">
-          <img
-            src="/interfold-logo.png"
-            alt="The Interfold"
-            className="w-[150px] md:w-[170px]"
-          />
+          <a href="https://theinterfold.com" className="inline-block">
+            <img
+              src="/interfold-logo.png"
+              alt="The Interfold"
+              className="w-[150px] md:w-[170px] opacity-95 transition duration-200 hover:-translate-y-[1px] hover:opacity-80"
+            />
+          </a>
         </div>
       </header>
 
-      <main className="relative min-h-screen overflow-hidden bg-[#d9fce8] text-neutral-950 antialiased font-sans">
+      <main className="relative min-h-screen bg-[#d9fce8] text-neutral-950 antialiased font-sans overflow-hidden">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.06]"
           style={{
@@ -78,19 +80,23 @@ export default function Content() {
           </div>
 
           <div className="mt-20 pt-4">
-            <div className="mb-10 h-px w-full bg-gradient-to-r from-transparent via-neutral-400/40 to-transparent" />
-
             <div className="grid grid-cols-12 items-start text-neutral-900">
               <span className="col-span-6 text-[1.35rem] font-medium leading-[1.02] tracking-[-0.035em] md:text-[1.7rem] lg:text-[1.9rem]">
-                Fairer auctions.
+                <span className="transition duration-200 hover:-translate-y-[2px] hover:text-neutral-700">
+                  Fairer auctions.
+                </span>
               </span>
 
               <span className="col-span-6 col-start-4 mt-6 text-[1.35rem] font-medium leading-[1.02] tracking-[-0.035em] md:mt-8 md:text-[1.7rem] lg:mt-10 lg:text-[1.9rem]">
-                Collaborative intelligence.
+                <span className="transition duration-200 hover:-translate-y-[2px] hover:text-neutral-700">
+                  Collaborative intelligence.
+                </span>
               </span>
 
               <span className="col-span-6 col-start-7 mt-6 text-right text-[1.35rem] font-medium leading-[1.02] tracking-[-0.035em] md:mt-8 md:text-[1.7rem] lg:mt-10 lg:text-[1.9rem]">
-                Stronger democratic systems.
+                <span className="transition duration-200 hover:-translate-y-[2px] hover:text-neutral-700">
+                  Stronger democratic systems.
+                </span>
               </span>
             </div>
           </div>
