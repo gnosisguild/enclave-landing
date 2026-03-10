@@ -1,22 +1,47 @@
 @tailwind base;
-@tailwind utilities;
 @tailwind components;
+@tailwind utilities;
 
 @layer base {
+
+  /* ---------------- */
+  /* Inter (body/UI)  */
+  /* ---------------- */
+
   @font-face {
-    font-family: 'Barlow';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(/fonts/Barlow-Regular.woff) format('woff');
+    src: url('/fonts/Inter-Regular.woff2') format('woff2');
   }
+
   @font-face {
-  font-family: 'Gramercy';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url('/fonts/Gramercy-Regular.woff2') format('woff2');
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('/fonts/Inter-Bold.woff2') format('woff2');
   }
+
+
+  /* ---------------- */
+  /* Gramercy (serif) */
+  /* ---------------- */
+
+  @font-face {
+    font-family: 'Gramercy';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Gramercy-Regular.woff2') format('woff2');
+  }
+
+
+  /* ---------------- */
+  /* Base styling     */
+  /* ---------------- */
+
   body {
     @apply bg-enclaveWhite text-enclaveBlue font-sans antialiased;
   }
@@ -24,4 +49,5 @@
   * {
     @apply box-border;
   }
+
 }
