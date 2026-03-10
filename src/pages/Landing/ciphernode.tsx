@@ -2,19 +2,20 @@ export default function RunCiphernode() {
   return (
     <>
       <header className="w-full bg-[#d9fce8]">
-        {/* Banner */}
-        <div className="border-b border-neutral-200/60 px-4 py-2 text-center text-[12px] text-neutral-700 sm:px-6 sm:text-sm md:px-10 lg:px-12">
+
+        {/* Announcement bar */}
+        <div className="bg-black px-4 py-2 text-center text-[13px] text-neutral-100 sm:px-6 sm:text-[15px] md:px-10 lg:px-12">
           Enclave is now The Interfold.{" "}
           <a
             href="https://blog.theinterfold.com/"
-            className="underline underline-offset-2 transition hover:text-neutral-900"
+            className="underline underline-offset-2 transition hover:text-white"
           >
             Learn more.
           </a>
         </div>
 
         {/* Logo */}
-        <div className="mx-auto w-full max-w-5xl px-5 py-2 sm:px-6 md:px-10 lg:px-12">
+        <div className="mx-auto w-full max-w-5xl px-5 pt-4 pb-2 sm:px-6 md:px-10 lg:px-12">
           <a href="https://theinterfold.com" className="inline-block">
             <img
               src="/interfold-logo.png"
@@ -23,6 +24,7 @@ export default function RunCiphernode() {
             />
           </a>
         </div>
+
       </header>
 
       <div className="min-h-screen w-full bg-[#d9fce8] flex justify-center px-5 pt-8 pb-16">
